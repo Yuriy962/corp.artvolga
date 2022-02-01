@@ -1,0 +1,52 @@
+.tech{
+    &__inner{
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
+    &__title{
+        text-align: left;
+    }
+    &-img{
+        img{
+            width: 100%;
+            max-width: 826px;
+            max-height: 636px;
+            margin: 0 auto;
+            border-radius: 16px;
+        }
+    }
+    &-text{
+        h4{
+            color: $pink;
+            margin-bottom: 30px;
+        }
+        &__item{
+            padding-top: 120px;
+            p {
+                margin: 15px 0;
+                line-height: 160%;
+            }
+        }
+    }
+    &__right{
+        max-width: 880px;
+        margin-right: auto;
+        padding-left: 87px;
+    }
+    @media (max-width: 992px){
+        &__inner{
+            padding-top: 80px;
+        }
+        &__title{
+            text-align: center;
+        }
+        &__right{
+            padding-left: 0;
+        }
+        &-text{
+            &__item{
+                padding-top: 90px;
+            }
+        }
+    }
+}

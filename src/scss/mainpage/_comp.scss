@@ -1,0 +1,123 @@
+.list{
+    margin-bottom: 50px;
+    &-item{
+        margin-bottom: 20px;
+        border: 1px solid #EFEFF5;
+        border-radius: 18px;
+        box-shadow: 0px 3px 40px rgba(202, 202, 208, 0.2);
+        background: #FFFFFF;
+    }
+    &-link {
+        position: relative;
+        z-index: 0;
+        margin-top: auto;
+        display: inline-block;
+        color: $pink;
+        font-size: 16px;
+        span{
+            position: relative;
+            z-index: 1;
+            padding-right: 15px;
+            text-transform: uppercase;
+            background-color: #fff;
+            display: inline-block;
+        }
+        &::after{
+            content: url('../../assets/img/icons/arrow-long.svg');
+            position: absolute;
+            right: -25px;
+            top: 2px;
+            z-index: 0;
+            transition: right .3s;
+        }
+    }
+    &-item:hover{
+        .list-link{
+            &::after{
+                right: -52px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &-link{
+            font-size: 14px;
+            &:after{
+                top: 0;
+            }
+        }
+
+    }
+}
+
+.comp{
+    &__inner{
+        padding: 100px 0;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__item{
+        padding: 30px 40px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        footer{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+    &-link{
+        margin-top: auto;
+        margin-right: auto;
+    }
+    @media (max-width: 1200px){
+        &-item-title{
+            font-size: 20px;
+        }
+    }
+    @media (max-width: 992px){
+        &__item{
+            padding: 30px;
+        }
+    }
+    @media (max-width: 768px){
+        &__inner{
+            padding: 60px 0;
+        }
+        &__title {
+            padding-bottom: 35px;
+        }
+        &__item{
+            height: 250px;
+        }
+    }
+    @media (max-width: 576px){
+        &-item-title {
+            font-size: 18px;
+        }
+        &__img{
+            margin: auto 0;
+        }
+        &__list{
+            .list{
+                margin-bottom: 20px;
+            }
+        }
+        &__item {
+            height: auto;
+            padding: 20px 8px;
+            flex-direction: row;
+            align-items: center;
+            footer{
+                padding-left: 20px;
+            }
+        }
+    }
+}

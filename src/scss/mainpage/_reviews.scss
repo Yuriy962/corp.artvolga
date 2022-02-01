@@ -1,0 +1,50 @@
+.reviews{
+    &__item{
+        height: 251px;
+    }
+    &-img{
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    @media (max-width: 992px){
+        &__item{
+            padding: 25px 35px;
+            height: 188px;
+        }
+    }
+    @media (max-width: 576px){
+        &__item{
+            align-items: flex-start;
+        }
+        &-img{
+            max-height: 75px;
+        }
+    }
+    
+}
+
+.subscribe{
+    background: url('../../assets/img/mainpage/form-bg--footer.png') center/cover no-repeat,
+    linear-gradient(66.94deg, #EFEFF2 12.79%, #E8E2E2 99.79%);
+    box-shadow: 0px 3px 50px rgba(211, 211, 217, 0.2);
+    &__title{
+        text-align: left;
+        font-size: 43px;
+    }
+    @media (max-width: 992px){
+        &__title{
+            text-align: center;
+        }
+        &__content{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    @media (max-width: 576px){
+        &__title{
+            padding-bottom: 30px;
+        }
+    }
+}

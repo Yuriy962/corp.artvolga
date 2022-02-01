@@ -10,6 +10,7 @@
   "author": "'Yuriy'",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/ui": "^4.0.21",
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "fs": "^0.0.1-security",
@@ -32,7 +33,10 @@
     "gulp-webp": "^4.0.1",
     "gulp-webp-html-nosvg": "^1.0.2",
     "gulp-webpcss": "^1.1.1",
+    "jquery": "^3.6.0",
+    "normalize.css": "^8.0.1",
     "sass": "^1.48.0",
+    "slick-carousel": "^1.8.1",
     "webp-converter": "^2.2.3",
     "webpack-stream": "^7.0.0"
   },

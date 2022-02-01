@@ -1,0 +1,32 @@
+.comfort{
+    &__header{
+        position: relative;
+        top: 96px;
+        z-index: 1;
+        display: flex;
+    }
+    &__title{
+        text-align: left;
+    }
+    &__text{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__footer{
+        background: url('../../assets/img/mainpage/comfort-bg.jpg') no-repeat;
+        padding: 155px 0;
+        p {
+            font-size: 19px;
+            color: $textBlack;
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width: 768px){
+        &__title{
+            text-align: center;
+        }
+        &__text{
+            font-size: 15px;
+        }
+    }
+}
