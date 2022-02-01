@@ -12,11 +12,11 @@ window.addEventListener("load", () => {
   let menu = document.querySelector(".menu");
   let menuItem = document.querySelectorAll(".menu__item");
 
-    // window.addEventListener("scroll", () => {
-    //     window.pageYOffset >= 100
-    //     ? header.classList.add("header--white")
-    //     : header.classList.remove("header--white");
-    // });
+    window.addEventListener("scroll", () => {
+        window.pageYOffset >= 80 && window.location.pathname == '/'
+          ? header.classList.add("header--white")
+          : header.classList.remove("header--white");
+    });
 
     hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("hamburger--active");
