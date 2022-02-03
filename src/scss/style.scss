@@ -848,6 +848,9 @@ a {
 }
 
 .text{
+    &-left{
+        text-align: left !important;
+    }
     &-center{
         text-align: center !important;
     }
@@ -1066,6 +1069,7 @@ input {
 }
 
 @import 'header';
+// mainpage
 @import 'mainpage/banner';
 @import 'mainpage/comp';
 @import 'mainpage/adv';
@@ -1074,4 +1078,8 @@ input {
 @import 'mainpage/quest';
 @import 'mainpage/opinion';
 @import 'mainpage/reviews';
+
 @import 'footer';
+
+//pages
+@import 'service/service';

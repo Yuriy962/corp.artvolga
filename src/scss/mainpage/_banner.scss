@@ -2,61 +2,111 @@
 
 .banner {
     overflow: hidden;
-    max-height: 926px;
-
-    &--main {
-        background: url('../assets/img/mainpage/banne-main.jpg');
-        background-size: cover;
-    }
-
     &__inner {
         position: relative;
         padding: 160px 0 0;
     }
-
-    &__info {
-        margin: 0 -15px;
-        padding-top: 125px;
-    }
-
     &__slide {
-        position: relative;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: flex-end;
-        max-height: 768px;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    max-height: 768px;
     }
-
     &__img {
         max-width: 497px;
         max-height: 770px;
     }
-
     &__btn {
         margin-top: 10px;
+    }
+    &__info{
+        margin: 0 -15px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    &--main {
+        background: url('../assets/img/mainpage/banne-main.jpg');
+        background-size: cover;
+        max-height: 926px;
+        &__info {
+            margin: 0 -15px;
+            padding-top: 125px;
+        }
+    }
+    &--service{
+        min-height: 640px;
+        background: url('../assets/img/service/banner-bg.png'),
+        $greyLight;
+        background-size: cover;
+        &__inner{
+            padding-bottom: 80px;
+        }
+        .text{
+            font-weight: 300;
+            color: $textBlack;
+        }
+        .btn{
+            width: 269px;
+            height: 74px;
+            font-size: 17px;
+        }
+    }
+}
+
+.breadcrumbs{
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 160%;
+    color: #6C6C6D;
+    &__item{
+        position: relative;
+        padding-right: 12px;
+        display: inline-block;
+        color: inherit;
+        text-decoration: underline;
+        transition: .3s;
+        &--active,
+        &:hover{
+            text-decoration: none;
+        }
+        &:after{
+            content: '/';
+            position: absolute;
+            right: 2px;
+        }
+        &:last-child{
+            padding-right: 0;
+            &::after{
+                content: none;
+            }
+        }
     }
 }
 @media (max-width: 1200px) {
     .banner{
         max-height: initial;
-        &--main{
-            padding-bottom: 60px;
-        }
         &__img{
             max-width: 363px;
             max-height: 574px;
         }
-        &__info{
-            padding-top: 80px;
+        &--main{
+            padding-bottom: 60px;
+            &__info{
+                padding-top: 80px;
+            }
         }
     }
 }
 @media (max-width: 992px){
     .banner{
-        &__info{
-            margin: 0;
-        }
         &--main{
+            &__info{
+                margin: 0;
+            }
             &__left{
                 position: absolute;
                 z-index: 1;
@@ -69,15 +119,13 @@
         &__inner{
             padding-top: 100px;
         }
-    }
-}
-@media (max-width: 768px) {
-    .banner {
         &__slide{
             max-height: 573px;
         }
-        &__info{
-            padding-top: 20px;
+        &--main{
+            &__info{
+                padding-top: 20px;
+            }
         }
     }
 }
@@ -85,14 +133,31 @@
     .banner{
         &__img {
             max-width: 320px;
-            // max-height: 321px;
         }
-        &__slide{
-            // max-height: 323px;
+        .section-title{
+            width: 90%;
+            padding-bottom: 15px;
+        }
+        &__info {
+            margin: 0;
+            padding-top: 10px;
+            padding-bottom: 20px;
         }
         &--main {
             &__left {
                 position: relative;
+            }
+        }
+        &--service {
+            min-height: 550px;
+            &__inner {
+                padding-top: 70px;
+                padding-bottom: 50px;
+            }
+            .btn {
+                width: 280px;
+                height: 65px;
+                font-size: 16px;
             }
         }
     }
@@ -103,11 +168,9 @@
             max-width: 230px;
             max-height: 321px;
         }
-
         &__slide {
             max-height: 323px;
         }
-
         &--main {
             &__left {
                 position: relative;

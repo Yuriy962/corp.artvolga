@@ -6,30 +6,49 @@ import * as fancybox from "../../node_modules/@fancyapps/ui/src/Fancybox/Fancybo
 
 flsFunctions.isWebp();
 
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
   let header = document.querySelector(".header");
   let hamburger = document.querySelector(".hamburger");
   let menu = document.querySelector(".menu");
   let menuItem = document.querySelectorAll(".menu__item");
 
-    window.addEventListener("scroll", () => {
-        window.pageYOffset >= 80 && window.location.pathname == '/'
-          ? header.classList.add("header--white")
-          : header.classList.remove("header--white");
-    });
+  window.addEventListener("scroll", () => {
+    window.pageYOffset >= 80 && window.location.pathname == "/"
+      ? header.classList.add("header--white")
+      : header.classList.remove("header--white");
+    if (window.location.pathname != "/") header.classList.add("header--white");
+  });
 
-    hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("hamburger--active");
-        menu.classList.toggle("menu--active");
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("hamburger--active");
+    menu.classList.toggle("menu--active");
 
-        // menuItem.forEach(
-        //     item.addEventListener("click", () => {
-        //         menu.classList.toggle("menu--active");
-        //     })
-        // );
-    });
+    // menuItem.forEach(
+    //     item.addEventListener("click", () => {
+    //         menu.classList.toggle("menu--active");
+    //     })
+    // );
+  });
 
-    
+  document.querySelectorAll('.tabs-triggers__item').forEach(item => {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+      const id = e.target.getAttribute("href").replace("#", "");
+
+      // удаляем active у табов
+      document.querySelectorAll(".tabs-triggers__item").forEach((child) =>
+          child.classList.remove("tabs-triggers__item--active")
+        );
+      // удаляем active у контента табов
+      document.querySelectorAll(".tabs-content__item").forEach((child) =>
+          child.classList.remove("tabs-content__item--active")
+        );
+
+      //добавляем класс активности нажатому табу и контенту нажатого таба
+      item.classList.add("tabs-triggers__item--active");
+      document.getElementById(id).classList.add("tabs-content__item--active");
+    })
+  });
 });
 
 $(window).on('load', function () {
