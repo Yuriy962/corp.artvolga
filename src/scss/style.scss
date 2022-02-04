@@ -173,6 +173,17 @@ a {
             padding: 45px 0;
         }
     }
+    &-text{
+        font-weight: 300;
+        p{
+            &:first-child{
+                margin-top: 0;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
     &-title {
         line-height: 130%;
         font-weight: 500;
@@ -732,6 +743,21 @@ a {
                 }
             }
         }
+        &--company{
+            top: -40px;
+            left: 0;
+            &__next{
+                left: 70px;
+            }
+            &__prev{
+                left: 0;
+            }
+        }
+        @media (max-width: 576px) {
+            &--company{
+                top: 0px;
+            }
+        }
         @media (max-width: 480px){
             width: 41px;
             height: 41px;
@@ -1083,3 +1109,4 @@ input {
 
 //pages
 @import 'service/service';
+@import 'company/company';

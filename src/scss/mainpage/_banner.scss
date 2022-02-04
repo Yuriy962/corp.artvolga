@@ -52,6 +52,19 @@
             font-size: 17px;
         }
     }
+    &--company{
+        background: url('../assets/img/company/company-bg.jpg') center bottom no-repeat;
+        color: #fff;
+        &__inner{
+            padding-top: 177px;
+        }
+        .section-title{
+            color: inherit;
+        }
+        .breadcrumbs{
+            color: inherit;
+        }
+    }
 }
 
 .breadcrumbs{
@@ -111,6 +124,12 @@
                 position: absolute;
                 z-index: 1;
             }
+        }
+        &--company {
+            background: url('../assets/img/company/company-bg--mobile.jpg') center center/cover no-repeat;
+        }
+        .banner__info{
+            padding-bottom: 80px;
         }
     }
 }
