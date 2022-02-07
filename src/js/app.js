@@ -217,6 +217,11 @@ $(window).on('load', function () {
       ],
    });
 
+   $('.dropdown').on('click', function () {
+    $(this).toggleClass("dropdown--active");
+    $(this).find(".dropdown-content").slideToggle();
+   });
+
   // Отправка формы
   $("form").on("submit", function (e) {
     e.preventDefault();

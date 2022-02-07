@@ -292,6 +292,19 @@ a {
             }
         }
     }
+    &--pt{
+        padding-top: 120px;
+    }
+    @media (max-width: 768px){
+        &--pt{
+            padding-top: 50px;
+        }
+    }
+    @media (max-width: 480px) {
+        &--pt {
+            padding-top: 25px;
+        }
+    }
 }
 
 .hamburger {
@@ -1094,6 +1107,10 @@ input {
     }
 }
 
+.fw-500{
+    font-weight: 500 !important;
+}
+
 @import 'header';
 // mainpage
 @import 'mainpage/banner';
@@ -1110,3 +1127,4 @@ input {
 //pages
 @import 'service/service';
 @import 'company/company';
+@import 'prices/prices';
