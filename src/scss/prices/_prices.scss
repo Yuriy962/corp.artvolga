@@ -133,6 +133,9 @@
 
 @media (max-width: 768px){
     .price{
+        &__title{
+            padding-bottom: 25px;
+        }
         &-table{
             &__item{
                 padding: 15px;
@@ -150,7 +153,7 @@
 @media (max-width: 480px) {
     .price {
         &__list{
-            margin: 40px 0 0;
+            margin: 25px 0 0;
         }
         &__item{
             
