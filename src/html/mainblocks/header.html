@@ -1,87 +1,94 @@
-<header class="header header--white">
-    <div class="container">
-        <div class="header__inner">
-            <div class="header__header">
-                <picture class="logo logo--header">
-                    <source media="(min-width: 993px)" srcset="assets/img/logo.png">
-                    <source media="(max-width: 992px)" srcset="assets/img/logo-mobile.png">
-                    <img class="logo__img" src="assets/img/logo.png" alt="logo">
-                </picture>
-                <a class="phone phone--header" href="tel:88462001719">8 (846) 200-17-19</a>
-                <button class="btn btn--header">Заказать звонок</button>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+<!DOCTYPE html>
+<html lang="en">
+
+    @@include('head.html',{
+    "title": "Контакты"
+    })
+<body>
+    <header class="header header--white">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__header">
+                    <picture class="logo logo--header">
+                        <source media="(min-width: 993px)" srcset="assets/img/logo.png">
+                        <source media="(max-width: 992px)" srcset="assets/img/logo-mobile.png">
+                        <img class="logo__img" src="assets/img/logo.png" alt="logo">
+                    </picture>
+                    <a class="phone phone--header" href="tel:88462001719">8 (846) 200-17-19</a>
+                    <button class="btn btn--header">Заказать звонок</button>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="line"></div>
-    <div class="container">
-        <div class="header__inner">
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item has-child">
-                        <a href="/about/" class="menu__link">О клинике</a>
-                        <svg class="menu-arrow">
-                            <use xlink:href="#arrow-menu"></use>
-                        </svg>
-                        <ul class="menu__list menu--sub__list">
-                            <li class="menu__item menu--sub__item menu--sub__item--first">
-                                <a href="/about/" class="menu__link menu--sub__link">О клинике</a>
-                                <svg class="menu-arrow">
-                                    <use xlink:href="#arrow-menu"></use>
-                                </svg>
-                            </li>
-                            <li class="menu__item menu--sub__item">
-                                <a href="" class="menu__link menu--sub__link">Новости</a>
-                            </li>
-                            <li class="menu__item menu--sub__item">
-                                <a href="" class="menu__link menu--sub__link">Отзывы</a>
-                            </li>
-                            <li class="menu__item menu--sub__item">
-                                <a href="" class="menu__link menu--sub__link">Оборудование</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a href="services/" class="menu__link">Услуги</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="doctors/" class="menu__link">Врачи</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="prices/" class="menu__link">Цены</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="patients/" class="menu__link">Пациетам</a>
-                    </li>
-                    <li class="menu__item has-child">
-                        <a href="donors/" class="menu__link">Донорам</a>
-                        <svg class="menu-arrow">
-                            <use xlink:href="#arrow-menu"></use>
-                        </svg>
-                        <ul class="menu__list menu--sub__list">
-                            <li class="menu__item menu--sub__item">
-                                <a href="" class="menu__link menu--sub__link">Блог</a>
-                            </li>
-                            <li class="menu__item menu--sub__item">
-                                <a href="" class="menu__link menu--sub__link">Экспертное мнение</a>
-                            </li>
-                            <li class="menu__item menu--sub__item">
-                                <a href="" class="menu__link menu--sub__link">Документы </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a href="stock/" class="menu__link">Акции</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="contacts/" class="menu__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="line"></div>
+        <div class="container">
+            <div class="header__inner">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item has-child">
+                            <a href="/about/" class="menu__link">О клинике</a>
+                            <svg class="menu-arrow">
+                                <use xlink:href="#arrow-menu"></use>
+                            </svg>
+                            <ul class="menu__list menu--sub__list">
+                                <li class="menu__item menu--sub__item menu--sub__item--first">
+                                    <a href="/about/" class="menu__link menu--sub__link">О клинике</a>
+                                    <svg class="menu-arrow">
+                                        <use xlink:href="#arrow-menu"></use>
+                                    </svg>
+                                </li>
+                                <li class="menu__item menu--sub__item">
+                                    <a href="" class="menu__link menu--sub__link">Новости</a>
+                                </li>
+                                <li class="menu__item menu--sub__item">
+                                    <a href="" class="menu__link menu--sub__link">Отзывы</a>
+                                </li>
+                                <li class="menu__item menu--sub__item">
+                                    <a href="" class="menu__link menu--sub__link">Оборудование</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="services/" class="menu__link">Услуги</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="doctors/" class="menu__link">Врачи</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="prices/" class="menu__link">Цены</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="patients/" class="menu__link">Пациетам</a>
+                        </li>
+                        <li class="menu__item has-child">
+                            <a href="donors/" class="menu__link">Донорам</a>
+                            <svg class="menu-arrow">
+                                <use xlink:href="#arrow-menu"></use>
+                            </svg>
+                            <ul class="menu__list menu--sub__list">
+                                <li class="menu__item menu--sub__item">
+                                    <a href="" class="menu__link menu--sub__link">Блог</a>
+                                </li>
+                                <li class="menu__item menu--sub__item">
+                                    <a href="" class="menu__link menu--sub__link">Экспертное мнение</a>
+                                </li>
+                                <li class="menu__item menu--sub__item">
+                                    <a href="" class="menu__link menu--sub__link">Документы </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="stock/" class="menu__link">Акции</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contacts/" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
-</header>
+    </header>

@@ -221,6 +221,36 @@ $(window).on('load', function () {
     $(this).toggleClass("dropdown--active");
     $(this).find(".dropdown-content").slideToggle();
    });
+   ymaps.ready(init);
+
+   function init() {
+     var myMap = new ymaps.Map(
+       "YaMaps",
+       {
+         center: [53.201823, 50.126729],
+         zoom: 9,
+       },
+       {
+         searchControlProvider: "yandex#search",
+       }
+     );
+
+     myMap.geoObjects.add(
+       new ymaps.Placemark(
+         [53.201709, 50.126451],
+         {
+           balloonContent: "цвет <strong>клиника Art-volga</strong>",
+         },
+         {
+           // preset: 'islands#icon',
+           // iconColor: '#0095b6',
+           iconLayout: "default#image",
+           iconImageHref: "../assets/img/icons/mark.png",
+           // iconImageSize: [67, 81]
+         }
+       )
+     );
+   }
 
   // Отправка формы
   $("form").on("submit", function (e) {

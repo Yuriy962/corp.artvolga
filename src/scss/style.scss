@@ -1106,9 +1106,11 @@ input {
         }
     }
 }
-
 .fw-500{
     font-weight: 500 !important;
+}
+.ymaps-2-1-79-ground-pane{
+    filter:grayscale(100%);
 }
 
 @import 'header';
@@ -1128,3 +1130,4 @@ input {
 @import 'service/service';
 @import 'company/company';
 @import 'prices/prices';
+@import 'contacts/contacts';
