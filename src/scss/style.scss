@@ -417,11 +417,12 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
+    transition: none;
     cursor: pointer;
     border-radius: 16px;
-    background: $btnBanner;
     font-size: 17px;
+    text-transform: uppercase;
+    background: $btnBanner;
     color: $white;
     &:hover {
         background: $purple;
@@ -546,7 +547,8 @@ a {
         }
 
         .menu--sub__list {
-            opacity: 0;
+            // opacity: 0;
+            display: none;
             transition: opacity .6s;
         }
 
@@ -569,7 +571,8 @@ a {
             }
 
             .menu--sub__list {
-                opacity: 1;
+                display: block;
+                // opacity: 1;
                 top: 100%;
             }
 

@@ -1,23 +1,26 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
         <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.min.css">
-        <title>Контакты</title>
+        <title>О клинике — ART Volga</title>
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     </head>
+    
 <body>
     <header class="header header--white">
         <div class="container">
             <div class="header__inner">
                 <div class="header__header">
-                    <picture class="logo logo--header">
-                        <source media="(min-width: 993px)" srcset="assets/img/logo.png">
-                        <source media="(max-width: 992px)" srcset="assets/img/logo-mobile.png">
-                        <img class="logo__img" src="assets/img/logo.png" alt="logo">
-                    </picture>
+                    <a href="/">
+                        <picture class="logo logo--header">
+                            <source media="(min-width: 993px)" srcset="assets/img/logo.png">
+                            <source media="(max-width: 992px)" srcset="assets/img/logo-mobile.png">
+                            <img class="logo__img" src="assets/img/logo.png" alt="logo">
+                        </picture>
+                    </a>
                     <a class="phone phone--header" href="tel:88462001719">8 (846) 200-17-19</a>
                     <button class="btn btn--header">Заказать звонок</button>
                     <div class="hamburger">
@@ -34,13 +37,13 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item has-child">
-                            <a href="/about/" class="menu__link">О клинике</a>
-                            <svg class="menu-arrow">
+                            <a href="/company.html" class="menu__link">О клинике</a>
+                            <!-- <svg class="menu-arrow">
                                 <use xlink:href="#arrow-menu"></use>
                             </svg>
                             <ul class="menu__list menu--sub__list">
                                 <li class="menu__item menu--sub__item menu--sub__item--first">
-                                    <a href="/about/" class="menu__link menu--sub__link">О клинике</a>
+                                    <a href="/company.html" class="menu__link menu--sub__link">О клинике</a>
                                     <svg class="menu-arrow">
                                         <use xlink:href="#arrow-menu"></use>
                                     </svg>
@@ -54,21 +57,45 @@
                                 <li class="menu__item menu--sub__item">
                                     <a href="" class="menu__link menu--sub__link">Оборудование</a>
                                 </li>
-                            </ul>
-                        </li>
-                        <li class="menu__item">
-                            <a href="services/" class="menu__link">Услуги</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="doctors/" class="menu__link">Врачи</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="prices/" class="menu__link">Цены</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="patients/" class="menu__link">Пациетам</a>
+                            </ul> -->
                         </li>
                         <li class="menu__item has-child">
+                            <a href="/service-detail.html" class="menu__link">Услуги</a>
+                            <svg class="menu-arrow">
+                                <use xlink:href="#arrow-menu"></use>
+                            </svg>
+                            <ul class="menu__list menu--sub__list">
+                                <li class="menu__item menu--sub__item">
+                                    <a href="/iksi.html" class="menu__link menu--sub__link">ИКСИ</a>
+                                    <svg class="menu-arrow">
+                                        <use xlink:href="#arrow-menu"></use>
+                                    </svg>
+                                </li>
+                                <li class="menu__item menu--sub__item">
+                                    <a href="/vmi.html" class="menu__link menu--sub__link">ВМИ</a>
+                                </li>
+                                <li class="menu__item menu--sub__item">
+                                    <a href="/vmisd.html" class="menu__link menu--sub__link">ВМИСД</a>
+                                </li>
+                                <li class="menu__item menu--sub__item">
+                                    <a href="/pgt.html" class="menu__link menu--sub__link">ПГТ</a>
+                                </li>
+                                <li class="menu__item menu--sub__item">
+                                    <a href="/otlozhennoe-materinstvo.html"
+                                        class="menu__link menu--sub__link">Отложенное материнство</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li class="menu__item">
+                            <a href="doctors/" class="menu__link">Врачи</a>
+                        </li> -->
+                        <li class="menu__item">
+                            <a href="/prices.html" class="menu__link">Цены</a>
+                        </li>
+                        <!-- <li class="menu__item">
+                            <a href="patients/" class="menu__link">Пациетам</a>
+                        </li> -->
+                        <!-- <li class="menu__item has-child">
                             <a href="donors/" class="menu__link">Донорам</a>
                             <svg class="menu-arrow">
                                 <use xlink:href="#arrow-menu"></use>
@@ -84,12 +111,12 @@
                                     <a href="" class="menu__link menu--sub__link">Документы </a>
                                 </li>
                             </ul>
+                        </li> -->
+                        <li class="menu__item">
+                            <a href="/documents.html" class="menu__link">Лицензии и документы</a>
                         </li>
                         <li class="menu__item">
-                            <a href="stock/" class="menu__link">Акции</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="contacts/" class="menu__link">Контакты</a>
+                            <a href="/contacts.html" class="menu__link">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -119,52 +146,19 @@
 <article class="section company">
     <div class="section__inner company__inner">
         <div class="container">
-            <h2 class="section-title section-title--h2 text-left">Краткое, но емкое выражение,<br> которое характеризует Вашу миссию
+            <h2 class="section-title section-title--h2 text-left">Помогаем родиться здоровым детям, используя все
+                достижения современной репродуктивной
+                медицины. С нами вы пройдете короткий путь к беременности.
             </h2>
             <div class="section-text text">
-                <p>С другой стороны консультация с широким активом позволяет выполнять важные задания по разработке
-                    позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько
-                    очевидна, что реализация намеченных плановых заданий способствует подготовки и реализации
-                    соответствующий условий активизации.</p>
-                <p>Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности влечет за собой
-                    процесс внедрения и модернизации модели развития. Идейные соображения высшего порядка, а также
-                    начало
-                    повседневной работы по формированию позиции в значительной степени обуславливает создание модели
-                    развития.</p>
-                <p>Таким образом консультация с широким активом способствует подготовки и реализации модели развития.
-                    Идейные соображения высшего порядка, а также рамки и место обучения кадров требуют от нас анализа
-                    направлений прогрессивного развития. Таким образом сложившаяся структура организации в значительной
-                    степени обуславливает создание форм развития. Товарищи! новая модель организационной деятельности
-                    требуют определения и уточнения форм развития. Повседневная практика показывает, что дальнейшее
-                    развитие
-                    различных форм деятельности требуют определения и уточнения системы обучения кадров, соответствует
-                    насущным потребностям.</p>
-                <p>С другой стороны дальнейшее развитие различных форм деятельности представляет собой интересный
-                    эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Товарищи!
-                    сложившаяся
-                    структура организации играет важную роль в формировании позиций, занимаемых участниками в отношении
-                    поставленных задач. Идейные соображения высшего порядка, а также консультация с широким активом в
-                    значительной степени обуславливает создание форм развития. Разнообразный и богатый опыт консультация
-                    с
-                    широким активом представляет собой интересный эксперимент проверки направлений прогрессивного
-                    развития.
-                    Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности влечет за собой процесс
-                    внедрения и модернизации соответствующий условий активизации. Таким образом новая модель
-                    организационной
-                    деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и
-                    административных
-                    условий. С другой стороны реализация намеченных плановых заданий требуют от нас анализа форм
-                    развития.
-                    Разнообразный и богатый опыт укрепление и развитие структуры в значительной степени обуславливает
-                    создание существенных финансовых и административных условий.</p>
-                <p>Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей
-                    деятельности требуют от нас анализа существенных финансовых и административных условий. С другой
-                    стороны
-                    дальнейшее развитие различных форм деятельности позволяет выполнять важные задания по разработке
-                    направлений прогрессивного развития. Таким образом новая модель организационной деятельности
-                    позволяет
-                    оценить значение систем массового участия. Идейные соображения высшего порядка, а также реализация
-                    намеченных плановых заданий играет важную роль в формировании новых предложений.</p>
+                <p>"ART-Volga" — Клиника Вспомогательных Репродуктивных Технологий (ВРТ). Клиника, к которой Пастухова
+                    Елена Александровна и одна из ее благодарных пациенток шли несколько долгих лет! Девиз Елены
+                    Александровны «Хочешь работать на хорошем месте? Сделай его сам!»⁣⁣⠀
+                    ⁣⁣</p>
+                    <p>
+                        Сотрудникам клиники, очень нравится новое место работы. Прежде всего потому, что они получили
+                        возможность оказывать услуги как считают нужным это делать: качественно, честно и комфортно!
+                    </p>
             </div>
         </div>
         <section class="section company-slider slider">
@@ -177,38 +171,16 @@
                         <div class="offset-xxl-2 offset-md-2 offset-sm-1 col-lg-auto col-12">
                              <div class="company-photos">
                                  <div class="company-photo">
-                                     <a href="assets/img/company/photo-1.jpg" data-fancybox data-gallery="company">
-                                         <img src="assets/img/company/photo-1.jpg" alt="photo-1">
-                                     </a>
+                                    <img src="assets/img/company/1.jpg" alt="photo-1">
                                  </div>
                                  <div class="company-photo">
-                                     <a href="assets/img/company/photo-2.jpg" data-fancybox data-gallery="company"><img
-                                             src="assets/img/company/photo-2.jpg" alt="photo-2"></a>
+                                     <img src="assets/img/company/2.jpg" alt="photo-2">
                                  </div>
                                  <div class="company-photo">
-                                     <a href="assets/img/company/photo-3.jpg" data-fancybox data-gallery="company"><img
-                                             src="assets/img/company/photo-3.jpg" alt="photo-3"></a>
+                                     <img src="assets/img/company/3.jpg" alt="photo-3">
                                  </div>
                                  <div class="company-photo">
-                                     <a href="assets/img/company/photo-4.jpg" data-fancybox data-gallery="company"><img
-                                             src="assets/img/company/photo-4.jpg" alt="photo-4"></a>
-                                 </div>
-                                 <div class="company-photo">
-                                     <a href="assets/img/company/photo-1.jpg" data-fancybox data-gallery="company">
-                                         <img src="assets/img/company/photo-1.jpg" alt="photo-1">
-                                     </a>
-                                 </div>
-                                 <div class="company-photo">
-                                     <a href="assets/img/company/photo-2.jpg" data-fancybox data-gallery="company"><img
-                                             src="assets/img/company/photo-2.jpg" alt="photo-2"></a>
-                                 </div>
-                                 <div class="company-photo">
-                                     <a href="assets/img/company/photo-3.jpg" data-fancybox data-gallery="company"><img
-                                             src="assets/img/company/photo-3.jpg" alt="photo-3"></a>
-                                 </div>
-                                 <div class="company-photo">
-                                     <a href="assets/img/company/photo-4.jpg" data-fancybox data-gallery="company"><img
-                                             src="assets/img/company/photo-4.jpg" alt="photo-4"></a>
+                                     <img src="assets/img/company/4.jpg" alt="photo-4">
                                  </div>
                              </div>
                         </div>
@@ -219,7 +191,43 @@
     </div>
 </article>
     </main>
-            <footer class="footer">
+    <footer class="footer">
+    <div class="container">
+        <div class="row m-0 footer__inner text-white">
+            <div class="col-auto f-column">
+                <div class="footer__item logo footer__logo col-lg-auto">
+                    <img src="assets/img/logo-white.png" alt="logo-white">
+                </div>
+                <a class="pro-doctorov" href="https://prodoctorov.ru/samara/lpu/79148-art-volga/#information"
+                    target="_blank">
+                    <img src="assets/img/prodoctorov.png" alt="pro-doctorov">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-5 col-auto">
+                <div class="footer__item footer__contacts">
+                    <p>ООО ИНЕП</p>
+                    <p>ИНН/КПП: 6317151218/ 631701001</p>
+                    <p>ОГРН: 1206300071988</p>
+                    <p>Лицензии: ЛО-63-01-005828</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-auto p-sm-0">
+                <div class="footer__item footer__text text-white">
+                    Вся представленная на сайте информация носит информационный характер и
+                    не является публичной офертой
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-auto">
+                <div class="footer__item footer__links text-white">
+                    <a data-fancybox href="#policy" class="policy popup">Политика конфиденциальности</a>
+                    <span>Создание сайтов - &nbsp;&nbsp; <a href="https://seoprostor.ru" class="author" target="_blank">SEO
+                            Простор</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
                     <div class="row">
@@ -380,9 +388,9 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
 
-        <script src="https://api-maps.yandex.ru/2.1/?apikey=59b38a3e-ec6a-4350-8294-b66b2c952233&lang=ru_RU"
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=e7d8e641-aaf4-43df-82c0-02b4c39cd17b&lang=ru_RU"
             type="text/javascript"></script>
         <script src="js/app.min.js"></script>
     </body>

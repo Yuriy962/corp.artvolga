@@ -242,11 +242,10 @@ $(window).on('load', function () {
            balloonContent: "цвет <strong>клиника Art-volga</strong>",
          },
          {
-           // preset: 'islands#icon',
+           preset: 'islands#icon',
            // iconColor: '#0095b6',
            iconLayout: "default#image",
            iconImageHref: "../assets/img/icons/mark.png",
-           // iconImageSize: [67, 81]
          }
        )
      );

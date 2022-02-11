@@ -113,10 +113,6 @@
         padding: 0;
     }
 }
-
-.doctors{
-
-}
 .doctor{
     margin-bottom: 40px;
     display: flex;
@@ -215,6 +211,7 @@
         margin-top: 30px;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
     }
     &__btn{
         width: 192px;
