@@ -556,6 +556,11 @@ address {
             padding: 4rem 1.5rem 3rem;
             margin-top: 0px;
 
+            input[type=tel],
+            input[type=text]:not([name=doctor]) {
+                max-width: 100%;
+            }
+
             &__input {
                 width: 100%;
                 font-size: 16px;

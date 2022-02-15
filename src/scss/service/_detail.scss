@@ -245,6 +245,9 @@
         &__top {
             padding-bottom: 20px;
         }
+        &__contacts{
+            flex-basis: 20%;
+        }
     }
 }
 @media (max-width: 1200px){
