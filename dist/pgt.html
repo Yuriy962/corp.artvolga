@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/style.min.css" type="text/css">
         <title>Генетическое тестирование (ПГТ) в Самаре — ART Volga</title>
         <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     </head>
@@ -21,8 +21,8 @@
                             <img class="logo__img" src="assets/img/logo.png" alt="logo">
                         </picture>
                     </a>
-                    <a class="phone phone--header" href="tel:88462001719">8 (846) 200-17-19</a>
-                    <button class="btn btn--header">Заказать звонок</button>
+                    <a class="phone phone--header" href="tel:88462053322">8 (846) 205-33-22</a>
+                    <button data-fancybox data-src="#callback" class="btn btn--header">Заказать звонок</button>
                     <div class="hamburger">
                         <span></span>
                         <span></span>
@@ -36,7 +36,7 @@
             <div class="header__inner">
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item has-child">
+                        <li class="menu__item">
                             <a href="/company.html" class="menu__link">О клинике</a>
                             <!-- <svg class="menu-arrow">
                                 <use xlink:href="#arrow-menu"></use>
@@ -60,7 +60,8 @@
                             </ul> -->
                         </li>
                         <li class="menu__item has-child">
-                            <a href="/service-detail.html" class="menu__link">Услуги</a>
+                            <!-- <a href="/service-detail.html" class="menu__link menu__link--main">Услуги</a> -->
+                            <span class="menu__link menu__link--main">Услуги</span>
                             <svg class="menu-arrow">
                                 <use xlink:href="#arrow-menu"></use>
                             </svg>
@@ -130,25 +131,23 @@
             <div class="breadcrumbs">
                 <a href="/" class="breadcrumbs__item">Главная</a>
                 <a href="/service.html" class="breadcrumbs__item">Услуги</a>
-                <a href="#" class="breadcrumbs__item breadcrumbs__item--active">Отложенное материнство</a>
+                <a href="#" class="breadcrumbs__item breadcrumbs__item--active">Генетическое тестирование (ПГТ) в Самаре
+                    — ART Volga</a>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-12">
                     <div class="banner__info">
                         <h1 class="section-title section-title--h2 text-left">
-                            Отложенное материнство
+                            Генетическое тестирование
                         </h1>
                         <div class="text">
-                            По данным статистики, количество женщин, которые впервые становятся мамами после 35 лет,
-                            растет. Это связано с тем, что они сначала получают образование и строят карьеру, а рождение
-                            ребенка в молодом активном возрасте не вписываться в их планы. <br>
-                            Проблема такого подхода заключается в том, что репродуктивная функция с годами ослабевает:
-                            уменьшается количество и качество яйцеклеток, что сокращает шансы на рождение ребенка. Кроме
-                            того, при поздней беременности возрастает риск возникновения хромосомных аномалий у будущего
-                            ребенка.
+                            Генетическое обследование рекомендуется при мужском и женском бесплодии, невынашивании
+                            беременности, а также нескольких неудачных попытках ЭКО. Генетические нарушения являются
+                            причиной бесплодия примерно у половины бесплодных пар. Современные методы ВРТ позволяют
+                            помочь родителям получить долгожданного здорового ребенка.
                         </div>
                     </div>
-                    <button class="btn btn--big btn--banner banner__btn">
+                    <button data-fancybox data-src="#callback" class="btn btn--big btn--banner banner__btn">
                         Записаться к врачу
                     </button>
                 </div>
@@ -167,17 +166,49 @@
                 <!-- <h3 class="section-title section-title--h3">ЭКО в естественном цикле</h3> -->
                 <div class="service-text text">
                     <p>
-                        К сожалению, не всем женщинам удается сделать выбор в пользу рождения малыша. Но в такой
-                        ситуации
-                        есть выход - выбрать программу "отложенного материнства".
-                        Суть данной программы состоит в том, что яйцеклетки женщины получают и криоконсервируют в
-                        молодом
-                        возрасте, когда в яичниках достаточно много здоровых яйцеклеток. Спустя время их можно
-                        разморозить,
-                        оплодотворить и использовать для наступления беременности. <br>
-                        Кто может воспользоваться программой "отложенного материнства"?
-                        Данная программа может быть предложена женщинам до 35 лет, которые пока не готовы к рождению
-                        ребенка, но планируют стать мамой в будущем.
+                        В нашей клинике супружеской паре может быть предложено пройти генетическое обследование
+                        (<strong><em>кариотипирование и молекулярно-генетическое тестирование</em></strong>), что
+                        позволит исключить генетические
+                        причины бесплодия и назначить правильное лечение.
+                    </p>
+                    <p>
+                        Каждый организм наделен определенным набором хромосом — это генетический паспорт каждого или
+                        <strong><em>кариотип</em></strong>. Кариотип человека состоит из 46 хромосом — 22 пары аутосом и
+                        две половые хромосомы. У
+                        женщин — это две Х-хромосомы (кариотип 46, ХХ), а у мужчин — одна Х-хромосома, а другая
+                        Y-хромосома
+                        (кариотип 46ХY). В каждой хромосоме находятся гены, ответственные за наследственность.
+                        Исследование
+                        кариотипа проводится с помощью цитогенетических и молекулярно-генетических методов.
+                    </p>
+                    <p>
+                        Причинами наследственных болезней являются изменения в молекулах ДНК. Когда изменения
+                        затрагивают
+                        большой участок ДНК, например, присутствие или отсутствие хромосомы или хромосомного участка,
+                        нарушение можно увидеть с помощью микроскопа. В этом случае, чтобы правильно поставить диагноз,
+                        достаточно цитогенетических методов тестирования (<strong><em>каритипирование</em></strong>).
+                        Кариотипирование позволяет
+                        <strong><em>выявить отклонение в структуре и числе хромосом</em></strong>, которые могут стать
+                        причиной бесплодия, другой
+                        наследственной болезни и рождения больного ребенка.
+                    </p>
+                    <p>Когда изменению (мутации) подвергается небольшой фрагмент ДНК (ген), кариотипирования
+                        недостаточно и
+                        необходимо использовать дополнительные, <strong><em>молекулярно-генетические
+                                методы</em></strong>. Эти методы позволят
+                        выявить
+                        минимальные изменения в последовательности ДНК интересующего гена.</p>
+
+                    <p>Возможность лаборатории ВРТ позволяет проводить и преимплантационное генетическое тестирование
+                        (<strong>ПГТ-А</strong>) <strong><em>на анеуплоидии</em></strong> (изменение кариотипа)
+                        эмбриона.</p>
+                    <p>
+                        <strong>ПГТ <em>(преимптантационное генетическое тестирование)</em></strong> — это тестирование
+                        эмбриона,
+                        полученного
+                        методом
+                        ЭКО до переноса в полость матки на возможные генетические заболевания с целью выбора здорового
+                        эмбриона.
                     </p>
                 </div>
                 <div class="service-price">
@@ -193,14 +224,18 @@
                             <p class="text">Всегда готовы помочь! Администратор ответит на любые Ваши вопросы.</p>
                         </header>
                         <footer>
+                            <div class="form-messages">
+                                <p class="form-message form-message--success">Заявка отправлена!</p>
+                                <p class="form-message form-message--error">Ошибка!</p>
+                            </div>
                             <div class="form__wrap">
-                                <input class="form__input" type="tel" name="" id=""
-                                    pattern="\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
+                                <input class="form__input" type="tel" name="tel" id="tel"
                                     placeholder="+7 (___) ___-__-__">
+                                <!-- pattern="\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" -->
                                 <input class="btn form--pink__btn btn--white" type="submit" value="Записаться">
                             </div>
                             <label class="form__label" class="checkbox">
-                                <input type="checkbox" name="" id="">
+                                <input type="checkbox" name="check" id="checkbox" checked required>
                                 Ввод номера телефона подтверждает ваше согласие с Политикой конфиденциальности
                             </label>
                         </footer>
@@ -224,36 +259,78 @@
             </h2>
             <section class="section tabs">
                 <header class="tabs-triggers">
-                    <a href="#procedure-1" class="tabs-triggers__item tabs-triggers__item--active">Преимущество</a>
-                    <a href="#procedure-2" class="tabs-triggers__item">Безопасность</a>
+                    <a href="#procedure-1" class="tabs-triggers__item tabs-triggers__item--active"> Что даёт ПГТ</a>
+                    <a href="#procedure-2" class="tabs-triggers__item">Показания</a>
+                    <a href="#procedure-3" class="tabs-triggers__item">Выполнение процедуры ПГТ</a>
+                    <a href="#procedure-4" class="tabs-triggers__item">Метод</a>
+                    <a href="#procedure-5" class="tabs-triggers__item">Уровень рисков</a>
                 </header>
                 <footer class="tabs-content">
                     <section id="procedure-1" class="tabs-content__item tabs-content__item--active">
                         <div class="service-text text">
-                            <p>
-                                Преимущество отложенного материнства заключается в том, что, когда женщина примет
-                                решение стать мамой в более позднем возрасте, яйцеклетки останутся молодыми и здоровыми.
-                            </p>
+                            Показания
+                            <ol>
+                                <li>Рождение здорового ребенка</li>
+                                <li>Снижение репродуктивных потерь</li>
+                                <li>Решает вопрос о донорских клетках</li>
+                                <li>Решает вопрос о суррогатном материнстве</li>
+                            </ol>
                         </div>
                     </section>
                     <section id="procedure-2" class="tabs-content__item">
                         <div class="service-text text">
-                            <p>Проведение программы достаточно безопасно, применение гормональных препаратов, которые
-                                необходимы на этапе стимуляции не влияет на резерв яичников и не приводит к их
-                                преждевременному истощению.</p>
-                            ⠀
-                            <p>Но каждой женщине, которая планирует воспользоваться данной программой, необходимо очень
-                                хорошо задуматься, поскольку проблема еще и в следующем:</p>
-                            ⠀
-                            <p>В более старшем возрасте, несмотря на качественный молодой генетический материал любая
-                                беременность протекает сложнее, так как организм будущей мамы уже достаточно истощен.
-                                <br>
-                                ⠀Абсолютно оправданным показанием к криоконсервации и сохранению яйцеклеток является
-                                необходимость лечения онкологического заболевания,которое может привести в последствии к
-                                гибели генетического материала. А программа «отложенного материнства» в такой ситуации
-                                дает
-                                пациентке после излечения реальный шанс на рождение ребенка».</p>
-
+                            <ol>
+                                <li>Носительство генных или хромосомных болезней (аномалии кариотипа)</li>
+                                <li>Возраст матери 35 лет и старше</li>
+                                <li>Привычное невынашивание беременности (более двух неразвивающихся беременностей или
+                                    потерь беременности в первом триместре)</li>
+                                <li>Более трёх безуспешных попыток ЭКО/ИКСИ</li>
+                                <li>Тяжелое нарушение сперматогенеза</li>
+                            </ol>
+                        </div>
+                    </section>
+                    <section id="procedure-3" class="tabs-content__item">
+                        <div class="service-text text">
+                            <p>
+                                ПГТ можно разделить на два этапа: <br>
+                                <strong>1-ый этап</strong> — это получение (<strong><em>биопсия</em></strong>) клеток
+                                трофэктодермы бластоцисты
+                                (эмбриона 5-7 ого
+                                дней
+                                развития). Забирают (биопсируют) от 2 до 5 клеток эмбриона. После проведения биопсии
+                                клеток
+                                трофэктодермы сами полученные клетки и эмбрионы криоконсервируются! <br>
+                                <strong>2-ой этап</strong> — это собственно <strong><em>генетическое
+                                        тестирование</em></strong> полученного
+                                материала.
+                            </p>
+                        </div>
+                    </section>
+                    <section id="procedure-4" class="tabs-content__item">
+                        <div class="service-text text">
+                            <p>В нашей клинике ПГТ проводится на <strong><em>клетках трофэктодермы</em></strong>
+                                эмбрионов
+                                <strong><em>5-6-7-ого дней развития</em></strong> на
+                                основе методов высокопроизводительного полногеномного секвенирования на платфореме
+                                Illumina.
+                                Этот метод позволяет получить надежные данные о хромосомных аномалиях, результаты
+                                которых
+                                дают достаточные основания судить о наличие анеуплоидий (хромосомных нарушений) у
+                                доимплантационных эмбрионов, а также значительно увеличить эффективность лечения
+                                методами
+                                ВРТ и предотвратить рождение ребенка с наследственными заболеваниями.</p>
+                        </div>
+                    </section>
+                    <section id="procedure-5" class="tabs-content__item">
+                        <div class="service-text text">
+                            <p>
+                                Уровень рисков при проведении <strong><em>биопсии эмбриона</em></strong> является таким
+                                же, как при выполнении
+                                стандартных микроманипуляционных процедур ВРТ. Процедура не сказывается на состоянии
+                                будущего ребенка и не оказывает негативного воздействия на организм матери. Однако,
+                                проведение ПГТ-А эмбриону не дает 100% гарантий, что наступит беременность и родится
+                                малыш.
+                            </p>
                         </div>
                     </section>
                 </footer>
@@ -269,6 +346,106 @@
                 Наши специалисты
             </h2>
             <div class="row">
+                <div class="col-12">
+                    <article class="doctor">
+                        <header class="doctor__header">
+                            <img src="assets/img/mainpage/doctors/pastuhova.png" alt="Пастухова">
+                        </header>
+                        <footer class="doctor__footer">
+                            <div class="doctor__top">
+                                <div class="achive">
+                                    <span class="achive__item text exp">Стаж 29 лет</span>
+                                    <span class="achive__item text category">Высшая категория</span>
+                                </div>
+                                <div class="rating">
+                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                </div>
+                            </div>
+                            <section class="doctor__info">
+                                <h4 class="section-title section-title--h4 doctor__name">
+                                    Пастухова Елена
+                                    Александровна
+                                </h4>
+                                <p class="text">Врач - репродуктолог</p>
+                                <div class="doctor__links">
+                                    <a href="https://prodoctorov.ru/samara/vrach/142427-pastuhova/" class="doctor__link"
+                                        target="_blank">
+                                        <img src="assets/img/icons/rec/prodoctorov.png" alt="продокторов">
+                                    </a>
+                                    <a href="https://samara.docdoc.ru/doctor/Pastuhova_Elena" class="doctor__link"
+                                        target="_blank">
+                                        <img src="assets/img/icons/rec/sberhealth.svg" alt="сбер здоровье">
+                                    </a>
+                                </div>
+                            </section>
+                            <div class="doctor__contacts">
+                                <p class="text">Записаться на приём: &nbsp;
+                                    <a class="phone doctor__phone" href="tel:+88462001719">8 (846)
+                                        200-17-19</a>
+                                </p>
+                                <div class="doctor__btns">
+                                    <!-- <button class="btn doctor__btn btn--header">Подробнее</button> -->
+                                    <button data-fancybox data-doctor="pastuhova" data-src="#order"
+                                        class="btn doctor__btn">
+                                        Записаться</button>
+                                </div>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-12">
+                    <article class="doctor">
+                        <header class="doctor__header">
+                            <img src="assets/img/mainpage/doctors/gukasyan.png" alt="Пастухова">
+                        </header>
+                        <footer class="doctor__footer">
+                            <div class="doctor__top">
+                                <div class="achive">
+                                    <span class="achive__item text exp">Стаж 14 лет</span>
+                                    <span class="achive__item text category">1 категория</span>
+                                </div>
+                                <div class="rating">
+                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                </div>
+                            </div>
+                            <section class="doctor__info">
+                                <h4 class="section-title section-title--h4 doctor__name">
+                                    Гукасян Сергей Норенци
+                                </h4>
+                                <p class="text">Врач - репродуктолог</p>
+                                <div class="doctor__links">
+                                    <a href="https://prodoctorov.ru/samara/vrach/74204-gukasyan/" class="doctor__link"
+                                        target="_blank">
+                                        <img src="assets/img/icons/rec/prodoctorov.png" alt="продокторов">
+                                    </a>
+                                    <a href="https://samara.docdoc.ru/doctor/Gukasyan_Sergey" class="doctor__link"
+                                        target="_blank">
+                                        <img src="assets/img/icons/rec/sberhealth.svg" alt="сбер здоровье">
+                                    </a>
+                                </div>
+                            </section>
+                            <div class="doctor__contacts">
+                                <p class="text">Записаться на приём: &nbsp;
+                                    <a class="phone doctor__phone" href="tel:+88462001719">8 (846)
+                                        200-17-19</a>
+                                </p>
+                                <div class="doctor__btns">
+                                    <!-- <button class="btn doctor__btn btn--header">Подробнее</button> -->
+                                    <button data-fancybox data-doctor="gukasyan" data-src="#order"
+                                        class="btn doctor__btn">Записаться</button>
+                                </div>
+                            </div>
+                        </footer>
+                    </article>
+                </div>
                 <div class="col-12">
                     <article class="doctor">
                         <header class="doctor__header">
@@ -309,7 +486,8 @@
                                     <a class="phone doctor__phone" href="tel:+88462001719">8 (846) 200-17-19</a>
                                 </p>
                                 <div class="doctor__btns">
-                                    <button class="btn doctor__btn">Записаться</button>
+                                    <button data-fancybox data-doctor="krasnova" data-src="#order"
+                                        class="btn doctor__btn">Записаться</button>
                                     <!-- <button class="btn doctor__btn btn--header">Подробнее</button> -->
                                 </div>
                             </div>
@@ -356,7 +534,8 @@
                                     <a class="phone doctor__phone" href="tel:+88462001719">8 (846) 200-17-19</a>
                                 </p>
                                 <div class="doctor__btns">
-                                    <button class="btn doctor__btn">Записаться</button>
+                                    <button data-fancybox data-doctor="kapralov" data-src="#order"
+                                        class="btn doctor__btn">Записаться</button>
                                     <!-- <button class="btn doctor__btn btn--header">Подробнее</button> -->
                                 </div>
                             </div>
@@ -401,103 +580,9 @@
                                     <a class="phone doctor__phone" href="tel:+88462001719">8 (846) 200-17-19</a>
                                 </p>
                                 <div class="doctor__btns">
-                                    <button class="btn doctor__btn">Записаться</button>
+                                    <button data-fancybox data-doctor="smolenceva" data-src="#order"
+                                        class="btn doctor__btn">Записаться</button>
                                     <!-- <button class="btn doctor__btn btn--header">Подробнее</button> -->
-                                </div>
-                            </div>
-                        </footer>
-                    </article>
-                </div>
-                <div class="col-12">
-                    <article class="doctor">
-                        <header class="doctor__header">
-                            <img src="assets/img/mainpage/doctors/pastuhova.png" alt="Пастухова">
-                        </header>
-                        <footer class="doctor__footer">
-                            <div class="doctor__top">
-                                <div class="achive">
-                                    <span class="achive__item text exp">Стаж 29 лет</span>
-                                    <span class="achive__item text category">Высшая категория</span>
-                                </div>
-                                <div class="rating">
-                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                </div>
-                            </div>
-                            <section class="doctor__info">
-                                <h4 class="section-title section-title--h4 doctor__name">
-                                    Пастухова Елена
-                                    Александровна
-                                </h4>
-                                <p class="text">Врач - репродуктолог</p>
-                                <div class="doctor__links">
-                                    <a href="https://prodoctorov.ru/samara/vrach/142427-pastuhova/" class="doctor__link"
-                                        target="_blank">
-                                        <img src="assets/img/icons/rec/prodoctorov.png" alt="продокторов">
-                                    </a>
-                                    <a href="https://samara.docdoc.ru/doctor/Pastuhova_Elena" class="doctor__link"
-                                        target="_blank">
-                                        <img src="assets/img/icons/rec/sberhealth.svg" alt="сбер здоровье">
-                                    </a>
-                                </div>
-                            </section>
-                            <div class="doctor__contacts">
-                                <p class="text">Записаться на приём: &nbsp;
-                                    <a class="phone doctor__phone" href="tel:+88462001719">8 (846) 200-17-19</a>
-                                </p>
-                                <div class="doctor__btns">
-                                    <!-- <button class="btn doctor__btn btn--header">Подробнее</button> -->
-                                    <button class="btn doctor__btn">Записаться</button>
-                                </div>
-                            </div>
-                        </footer>
-                    </article>
-                </div>
-                <div class="col-12">
-                    <article class="doctor">
-                        <header class="doctor__header">
-                            <img src="assets/img/mainpage/doctors/gukasyan.png" alt="Пастухова">
-                        </header>
-                        <footer class="doctor__footer">
-                            <div class="doctor__top">
-                                <div class="achive">
-                                    <span class="achive__item text exp">Стаж 14 лет</span>
-                                    <span class="achive__item text category">1 категория</span>
-                                </div>
-                                <div class="rating">
-                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                    <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                </div>
-                            </div>
-                            <section class="doctor__info">
-                                <h4 class="section-title section-title--h4 doctor__name">
-                                    Гукасян Сергей Норенци
-                                </h4>
-                                <p class="text">Врач - репродуктолог</p>
-                                <div class="doctor__links">
-                                    <a href="https://prodoctorov.ru/samara/vrach/74204-gukasyan/" class="doctor__link"
-                                        target="_blank">
-                                        <img src="assets/img/icons/rec/prodoctorov.png" alt="продокторов">
-                                    </a>
-                                    <a href="https://samara.docdoc.ru/doctor/Gukasyan_Sergey" class="doctor__link"
-                                        target="_blank">
-                                        <img src="assets/img/icons/rec/sberhealth.svg" alt="сбер здоровье">
-                                    </a>
-                                </div>
-                            </section>
-                            <div class="doctor__contacts">
-                                <p class="text">Записаться на приём: &nbsp;
-                                    <a class="phone doctor__phone" href="tel:+88462001719">8 (846) 200-17-19</a>
-                                </p>
-                                <div class="doctor__btns">
-                                    <!-- <button class="btn doctor__btn btn--header">Подробнее</button> -->
-                                    <button class="btn doctor__btn">Записаться</button>
                                 </div>
                             </div>
                         </footer>
@@ -558,9 +643,9 @@
     <div class="container">
         <div class="row m-0 footer__inner text-white">
             <div class="col-auto f-column">
-                <div class="footer__item logo footer__logo col-lg-auto">
+                <a href="/" class="footer__item logo footer__logo col-lg-auto">
                     <img src="assets/img/logo-white.png" alt="logo-white">
-                </div>
+                </a>
                 <a class="pro-doctorov" href="https://prodoctorov.ru/samara/lpu/79148-art-volga/#information"
                     target="_blank">
                     <img src="assets/img/prodoctorov.png" alt="pro-doctorov">
@@ -779,7 +864,8 @@
                     <input class="form__input popup-form__input" type="text" name="name" id="name"
                         placeholder="Ваше имя">
                     <input class="form__input popup-form__input form__phone" type="tel" name="tel" id="tel"
-                        placeholder="Номер телефона" pattern="\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                        placeholder="Номер телефона"  required>
+                        <!-- pattern="\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" -->
                 </div>
                 <div class="form__row">
                     <input class="form__input popup-form__input w-100" type="text" name="doctor" id="doctor"
@@ -814,7 +900,8 @@
                 <div class="form__row popup-form__row popup-form__col--mobile">
                     <input class="form__input popup-form__input" type="text" name="name" id="name" placeholder="Ваше имя">
                     <input class="form__input popup-form__input form__phone" type="tel" name="tel" id="tel"
-                        placeholder="Номер телефона" pattern="\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                        placeholder="Номер телефона" required>
+                        <!-- pattern="\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" -->
                 </div>
                 <div class="form__row popup-form__row">
                     <label class="policy">
@@ -874,5 +961,39 @@
             </div>
         </div>
     </div>
+
+        <div class="" style="display:none">
+            <div class="popup">
+                <form action="" class="form popup-form" id="callback" method="POST">
+                    <h2 class="title text-center">Заказать звонок</h2>
+                    <p class="text text-center popup-form__text">Оставьте контакты и мы с Вами свяжемся</p>
+
+                    <div class="form-messages">
+                        <p class="form-message form-message--success">Заявка отправлена!</p>
+                        <p class="form-message form-message--error">Ошибка!</p>
+                    </div>
+
+                    <div class="form__row popup-form__row popup-form__col--mobile">
+                        <input class="form__input popup-form__input" type="text" name="name" id="name"
+                            placeholder="Ваше имя">
+                        <input class="form__input popup-form__input form__phone" type="tel" name="tel" id="tel"
+                            placeholder="Номер телефона"
+                            required>
+                            <!-- pattern="\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" -->
+                    </div>
+                    <div class="form__row popup-form__row">
+                        <label class="policy">
+                            <input class="form__checkbox form-popup__checkbox" type="checkbox" name="agreement"
+                                id="checkbox-popup-1" required checked>
+                            <span>Ввод номера телефона подтверждает ваше согласие с <a href="#policy"
+                                    class="link link--underlined popup">Политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                    <div class="text-center">
+                        <input class="btn btn--middlesize form-popup__btn" type="submit" value="Заказать звонок">
+                    </div>
+                </form>
+            </div>
+        </div>
 
 </html>

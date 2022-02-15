@@ -104,10 +104,11 @@
         }
         &__item{
             @extend .text;
+            padding: 13px 0;
             display: flex;
             align-items: center;
             font-weight: 300;
-            height: 58px;
+            min-height: 58px;
             &:nth-child(even){
                 background: #fff;
             }
@@ -122,6 +123,7 @@
         }
         &__name{
             padding: 0 30px;
+            flex-basis: 70%;
             flex-grow: 1;
         }
         &__number,
@@ -130,7 +132,16 @@
         }
     }
 }
-
+@media (max-width: 1200px){
+    .price{
+        &-table{
+            &__name {
+                padding: 0 30px;
+                flex-grow: 1;
+            }
+        }
+    }
+}
 @media (max-width: 768px){
     .price{
         &__title{
@@ -163,7 +174,7 @@
         }
         &-table {
             &__item {
-                height: 98px;
+                min-height: 98px;
                 padding: 15px;
                 flex-wrap: wrap;
             }

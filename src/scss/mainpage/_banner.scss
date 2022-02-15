@@ -7,11 +7,11 @@
         padding: 160px 0 0;
     }
     &__slide {
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    max-height: 768px;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        max-height: 768px;
     }
     &__img {
         max-width: 497px;
@@ -116,20 +116,25 @@
 }
 @media (max-width: 992px){
     .banner{
-        &--main{
-            &__info{
-                margin: 0;
-            }
-            &__left{
-                position: absolute;
-                z-index: 1;
-            }
-        }
         &--company {
             background: url('../assets/img/company/company-bg--mobile.jpg') center center/cover no-repeat;
         }
         .banner__info{
             padding-bottom: 80px;
+        }
+        &--main {
+            &__info {
+                margin: 0;
+            }
+
+            &__left {
+                position: absolute;
+                z-index: 1;
+            }
+
+            .banner__info {
+                padding-bottom: 0;
+            }
         }
     }
 }
@@ -142,7 +147,7 @@
             max-height: 573px;
         }
         &--main{
-            &__info{
+            .banner__info{
                 padding-top: 20px;
             }
         }
@@ -163,8 +168,15 @@
             padding-bottom: 20px;
         }
         &--main {
-            &__left {
-                position: relative;
+            &__left{
+                max-width: 50%;
+            }
+            .banner__info{
+                padding-top: 80px;
+            }
+            .btn{
+                height: 60px;
+                max-width: 100%;
             }
         }
         &--service {
@@ -190,9 +202,20 @@
         &__slide {
             max-height: 323px;
         }
-        &--main {
-            &__left {
+        &--main{
+            padding-bottom: 30px;
+            .section-title{
+                padding-bottom: 0;
+            }
+            &__left{
+                max-width: 100%;
                 position: relative;
+            }
+            .banner__info {
+                padding-top: 0px;
+            }
+            .slider--banner{
+                top: 30px;
             }
         }
     }

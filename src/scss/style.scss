@@ -7,7 +7,6 @@
 }
 
 /*LIBS*/
-
 @import url("../../node_modules/bootstrap/dist/css/bootstrap-grid.css");
 @import url("../../node_modules/normalize.css/normalize.css");
 @import url("../../node_modules/slick-carousel/slick/slick.css");
@@ -957,6 +956,7 @@ input {
         padding-top: 10px;
         display: flex;
         align-items: flex-end;
+        cursor: pointer;
     }
     &--pink{
         background: url(../assets/img/mainpage/form-bg.png) center/cover no-repeat, $pinkGradient;

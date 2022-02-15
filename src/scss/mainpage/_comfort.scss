@@ -29,4 +29,10 @@
             font-size: 15px;
         }
     }
+    @media (max-width: 480px){
+        &__footer{
+            padding: 100px 0;
+            background-size: cover;
+        }
+    }
 }

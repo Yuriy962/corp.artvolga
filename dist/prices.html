@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="css/style.min.css" type="text/css">
         <title>Цены на услуги ЭКО — ART Volga</title>
         <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     </head>
@@ -21,8 +21,8 @@
                             <img class="logo__img" src="assets/img/logo.png" alt="logo">
                         </picture>
                     </a>
-                    <a class="phone phone--header" href="tel:88462001719">8 (846) 200-17-19</a>
-                    <button class="btn btn--header">Заказать звонок</button>
+                    <a class="phone phone--header" href="tel:88462053322">8 (846) 205-33-22</a>
+                    <button data-fancybox data-src="#callback" class="btn btn--header">Заказать звонок</button>
                     <div class="hamburger">
                         <span></span>
                         <span></span>
@@ -36,7 +36,7 @@
             <div class="header__inner">
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item has-child">
+                        <li class="menu__item">
                             <a href="/company.html" class="menu__link">О клинике</a>
                             <!-- <svg class="menu-arrow">
                                 <use xlink:href="#arrow-menu"></use>
@@ -60,7 +60,8 @@
                             </ul> -->
                         </li>
                         <li class="menu__item has-child">
-                            <a href="/service-detail.html" class="menu__link">Услуги</a>
+                            <!-- <a href="/service-detail.html" class="menu__link menu__link--main">Услуги</a> -->
+                            <span class="menu__link menu__link--main">Услуги</span>
                             <svg class="menu-arrow">
                                 <use xlink:href="#arrow-menu"></use>
                             </svg>
@@ -132,13 +133,13 @@
                 <a href="#" class="breadcrumbs__item breadcrumbs__item--active">О клинике</a>
             </div>
             <h1 class="section-title--h2 price__title text-left fw-500">Цены на услуги</h1>
-            <div class="search search--big">
+            <!-- <div class="search search--big">
                 <input class="search__input" type="search" name="" id="" placeholder="Введите название услуги">
-            </div>
+            </div> -->
             <div class="price__list">
                 <section class="price__item price__item--first dropdown">
                     <header>
-                        <h6 class="section-title section-title--h6 fw-500">Амбулаторный прием</h6>
+                        <h6 class="section-title section-title--h6 fw-500">Приёмы специалистов</h6>
                         <div class="plus">
                             <span></span>
                             <span></span>
@@ -147,7 +148,107 @@
                     <footer class="price-table dropdown-content">
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.001
+                                11.001
+                            </div>
+                            <div class="price-table__name">
+                                Комплексный приём врача репродуктолога первичный
+                            </div>
+                            <div class="price-table__cost">
+                                 2 900 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                11.002
+                            </div>
+                            <div class="price-table__name">
+                                Комплексный приём врача репродуктолога повторный
+
+                            </div>
+                            <div class="price-table__cost">
+                                2 400 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                11.003 
+                            </div>
+                            <div class="price-table__name">
+                               Консультация репродуктолога первичная
+
+                            </div>
+                            <div class="price-table__cost">
+                                2 300 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                11.004
+
+                            </div>
+                            <div class="price-table__name">
+                                Консультация репродуктолога повторная
+
+                            </div>
+                            <div class="price-table__cost">
+                                1 600 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                11.005
+
+                            </div>
+                            <div class="price-table__name">
+                                Комплексный приём врача уролога-андролога первичный
+
+                            </div>
+                            <div class="price-table__cost">
+                                2 900 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                11.006
+
+                            </div>
+                            <div class="price-table__name">
+                                Комплексный приём врача уролога-андролога повторный
+
+                            </div>
+                            <div class="price-table__cost">
+                                 2 400 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                11.007
+
+                            </div>
+                            <div class="price-table__name">
+                                Консультация уролога-андролога первичная
+
+                            </div>
+                            <div class="price-table__cost">
+                                2 300 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                11.008
+                            </div>
+                            <div class="price-table__name">
+                                Консультация уролога-андролога повторная
+
+                            </div>
+                            <div class="price-table__cost">
+                                 1 600 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                11.009
+
                             </div>
                             <div class="price-table__name">
                                 Введение препарата Гонал-ф 300 МЕ
@@ -158,7 +259,8 @@
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.002
+                                11.010
+
                             </div>
                             <div class="price-table__name">
                                 Введение препарата Гонал-ф 75 МЕ
@@ -169,51 +271,8 @@
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.003
-                            </div>
-                            <div class="price-table__name">
-                               Введение препарата Гонал-ф 450 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                8 700 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.004
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 900 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                17 400 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.001
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 300 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                5 400 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.002
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 75 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                1 200 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.003
+                                11.011
+
                             </div>
                             <div class="price-table__name">
                                 Введение препарата Гонал-ф 450 МЕ
@@ -224,57 +283,198 @@
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.004
+                                11.012
+
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 900 МЕ
+                                Консультация врача акушера-гинеколога повторная
+
                             </div>
                             <div class="price-table__cost">
-                                17 400 ₽
+                                1 600 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.001
+                                11.013
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 300 МЕ
+                                Постановка на учет по беременности (акушерский прием, разработка плана ведения
+                                беременности, оформление индивидуальной карты беременной и родильницы)
+
                             </div>
                             <div class="price-table__cost">
-                                5 400 ₽
+                                3 100 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.002
+                               11.014
+
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 75 МЕ
+                                Приём акушера-гинеколога по беременности
+
                             </div>
                             <div class="price-table__cost">
-                                1 200 ₽
+                                 2 600 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.003
+                                11.015
+
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 450 МЕ
+                                Приём врача терапевта первичный
+
                             </div>
                             <div class="price-table__cost">
-                                8 700 ₽
+                                 2 300 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.004
+                                11.016
+
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 900 МЕ
+                                Приём врача терапевта повторный
+
                             </div>
                             <div class="price-table__cost">
-                                17 400 ₽
+                                 2 100 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                11.017
+                            </div>
+                            <div class="price-table__name">
+                                Консультация врача терапевта
+
+                            </div>
+                            <div class="price-table__cost">
+                                 1 600 ₽
+                            </div>
+                        </div>
+                    </footer>
+                </section>
+                <section class="price__item dropdown">
+                    <header>
+                        <h6 class="section-title section-title--h6 fw-500">Амбулаторные услуги</h6>
+                        <div class="plus">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </header>
+                    <footer class="price-table dropdown-content">
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                12.002
+                            </div>
+                            <div class="price-table__name">
+                                Кольпоскопия
+                            </div>
+                            <div class="price-table__cost">
+                                 1 900 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                12.003
+
+                            </div>
+                            <div class="price-table__name">
+                                Комплексная спермограмма
+                            </div>
+                            <div class="price-table__cost">
+                                 2 400 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                12.004
+
+                            </div>
+                            <div class="price-table__name">
+                                Спермограмма
+                            </div>
+                            <div class="price-table__cost">
+                                 1 900 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                12.005
+
+                            </div>
+                            <div class="price-table__name">
+                                MAR - тест
+                            </div>
+                            <div class="price-table__cost">
+                                 500 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                12.006
+
+                            </div>
+                            <div class="price-table__name">
+                                Пробная обработка спермы
+                            </div>
+                            <div class="price-table__cost">
+                                 3 700 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                12.007
+
+                            </div>
+                            <div class="price-table__name">
+                                Диагностическая гидроультрасонография
+                            </div>
+                            <div class="price-table__cost">
+                                 2 100 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                12.008
+
+                            </div>
+                            <div class="price-table__name">
+                                Введение ВМС под УЗ контролем
+                            </div>
+                            <div class="price-table__cost">
+                                 2 600 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                12.009
+
+                            </div>
+                            <div class="price-table__name">
+                                Удаление ВМС
+                            </div>
+                            <div class="price-table__cost">
+                                 1 600 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                12.010
+
+                            </div>
+                            <div class="price-table__name">
+                                Кардиотокография (КТГ)
+
+                            </div>
+                            <div class="price-table__cost">
+                                1 400 ₽
                             </div>
                         </div>
                     </footer>
@@ -290,277 +490,123 @@
                     <footer class="price-table dropdown-content">
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.001
+                                21.001
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 300 МЕ
+                                Аспирационная биопсия
                             </div>
                             <div class="price-table__cost">
-                                5 400 ₽
+                                 2 700 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.002
+                                21.002
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 75 МЕ
+                                Биопсия шейки матки
                             </div>
                             <div class="price-table__cost">
-                                1 200 ₽
+                                3 200 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.003
+                                21.003
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 450 МЕ
+                                Выскабливание цервикального канала
                             </div>
                             <div class="price-table__cost">
-                                8 700 ₽
+                                 5 200 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.004
+                                21.004
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 900 МЕ
+                                Биопсия шейки матки с выскабливанием цервикального канала
                             </div>
                             <div class="price-table__cost">
-                                17 400 ₽
+                                7 400 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.001
+                                21.005
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 300 МЕ
+                                Выскабливание полости матки
                             </div>
                             <div class="price-table__cost">
-                                5 400 ₽
+                                 6 500 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.002
+                                21.006
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 75 МЕ
+                                Раздельное диагностическое выскабливание (РДВ)
                             </div>
                             <div class="price-table__cost">
-                                1 200 ₽
+                                 9 800 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.003
+                                21.007
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 450 МЕ
+                                Диагностическая гистероскопия
                             </div>
                             <div class="price-table__cost">
-                                8 700 ₽
+                                 7 800 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.004
+                                21.008
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 900 МЕ
+                                Трансвагинальная пункция кисты яичника
                             </div>
                             <div class="price-table__cost">
-                                17 400 ₽
+                                9 800 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.001
+                                21.009
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 300 МЕ
+                                Трансвагинальная пункция при синдроме гиперстимуляции яичников
                             </div>
                             <div class="price-table__cost">
-                                5 400 ₽
+                                5 600 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.002
+                                21.010
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 75 МЕ
+                                Гистологическое исследование 1 блок
                             </div>
                             <div class="price-table__cost">
-                                1 200 ₽
+                                1 500 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.003
+                                29.001
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 450 МЕ
+                                Анестезиологическое пособие
                             </div>
                             <div class="price-table__cost">
-                                8 700 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.004
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 900 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                17 400 ₽
-                            </div>
-                        </div>
-                    </footer>
-                </section>
-                <section class="price__item dropdown">
-                    <header>
-                        <h6 class="section-title section-title--h6 fw-500">Дневной стационар</h6>
-                        <div class="plus">
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </header>
-                    <footer class="price-table dropdown-content">
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.001
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 300 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                5 400 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.002
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 75 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                1 200 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.003
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 450 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                8 700 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.004
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 900 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                17 400 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.001
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 300 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                5 400 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.002
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 75 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                1 200 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.003
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 450 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                8 700 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.004
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 900 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                17 400 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.001
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 300 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                5 400 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.002
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 75 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                1 200 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.003
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 450 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                8 700 ₽
-                            </div>
-                        </div>
-                        <div class="price-table__item text">
-                            <div class="price-table__number">
-                                51.004
-                            </div>
-                            <div class="price-table__name">
-                                Введение препарата Гонал-ф 900 МЕ
-                            </div>
-                            <div class="price-table__cost">
-                                17 400 ₽
+                                 6 800 ₽
                             </div>
                         </div>
                     </footer>
@@ -576,141 +622,319 @@
                     <footer class="price-table dropdown-content">
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.001
+                                41.001
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 300 МЕ
+                                Внутриматочная инсеминация
                             </div>
                             <div class="price-table__cost">
-                                5 400 ₽
+                                 16 800 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.002
+                                41.002
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 75 МЕ
+                                Обработка спермы для внутриматочной инсеминации
                             </div>
                             <div class="price-table__cost">
-                                1 200 ₽
+                                 3 700 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.003
+                                42.001
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 450 МЕ
+                                Трансвагинальная пункция фолликулов
                             </div>
                             <div class="price-table__cost">
-                                8 700 ₽
+                                 40 500 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.004
+                                42.002
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 900 МЕ
+                                Трансвагинальная пункция фолликулов в натуральном цикле
                             </div>
                             <div class="price-table__cost">
-                                17 400 ₽
+                                40 500 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.001
+                                42.003
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 300 МЕ
+                                Идентификация и оценка степени зрелости ооцитов
                             </div>
                             <div class="price-table__cost">
-                                5 400 ₽
+                                 20 400 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.002
+                                42.004
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 75 МЕ
+                                Идентификация и оценка степени зрелости ооцита в натуральном цикле
                             </div>
                             <div class="price-table__cost">
-                                1 200 ₽
+                                 14 700 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.003
+                                42.005
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 450 МЕ
+                                Экстракорпоральное оплодотворение ооцитов
                             </div>
                             <div class="price-table__cost">
-                                8 700 ₽
+                                 19 600 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.004
+                                42.006
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 900 МЕ
+                                Экстракорпоральное оплодотворение ооцита в натуральном цикле
                             </div>
                             <div class="price-table__cost">
-                                17 400 ₽
+                                 19 600 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.001
+                                42.007
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 300 МЕ
+                                Культивирование эмбрионов
                             </div>
                             <div class="price-table__cost">
-                                5 400 ₽
+                                 14 400 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.002
+                                42.008
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 75 МЕ
+                                Культивирование эмбрионов в натуральном цикле
                             </div>
                             <div class="price-table__cost">
-                                1 200 ₽
+                                 10 300 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.003
+                                42.009
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 450 МЕ
+                                Перенос эмбрионов в полость матки
                             </div>
                             <div class="price-table__cost">
-                                8 700 ₽
+                                 30 800 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.004
+                                42.010
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 900 МЕ
+                                Перенос эмбриона в полость матки в натуральном цикле
                             </div>
                             <div class="price-table__cost">
-                                17 400 ₽
+                                 30 800 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                42.011
+                            </div>
+                            <div class="price-table__name">
+                                Интрацитоплазматическая инъекция сперматозоида в ооцит
+                            </div>
+                            <div class="price-table__cost">
+                                 39 500 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                42.012
+                            </div>
+                            <div class="price-table__name">
+                                Тестикулярная биопсия
+                            </div>
+                            <div class="price-table__cost">
+                                 19 200 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                42.013
+                            </div>
+                            <div class="price-table__name">
+                                Идентификация сперматозоидов после тестикулярной биопсии
+                            </div>
+                            <div class="price-table__cost">
+                                 8 400 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                42.014
+                            </div>
+                            <div class="price-table__name">
+                                Физиологический отбор сперматозоидов (ПИКСИ)
+                            </div>
+                            <div class="price-table__cost">
+                                 7 800 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                43.001
+                            </div>
+                            <div class="price-table__name">
+                                Использование спермы донора (1 доза) для оказания медицинских услуг с применением
+                                вспомогательных репродуктивных технологий
+                            </div>
+                            <div class="price-table__cost">
+                                 18 900 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                43.002
+                            </div>
+                            <div class="price-table__name">
+                                Использование донорских ооцитов (один донор - один реципиент) для оказания медицинских
+                                услуг с применением вспомогательных репродуктивных технологий
+                            </div>
+                            <div class="price-table__cost">
+                                 96 000 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                44.001
+                            </div>
+                            <div class="price-table__name">
+                                Криоконсервация сперматозоидов
+                            </div>
+                            <div class="price-table__cost">
+                                 9 800 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                44.002
+                            </div>
+                            <div class="price-table__name">
+                                Криоконсервация ооцитов
+                            </div>
+                            <div class="price-table__cost">
+                                 28 200 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                44.003
+                            </div>
+                            <div class="price-table__name">
+                                Криоконсервация эмбрионов
+                            </div>
+                            <div class="price-table__cost">
+                                 28 200 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                44.004
+                            </div>
+                            <div class="price-table__name">
+                                Размораживание эмбрионов
+                            </div>
+                            <div class="price-table__cost">
+                                 19 200 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                44.005
+                            </div>
+                            <div class="price-table__name">
+                                Хранение криоконсервированного материала в течении 1 мес.
+                            </div>
+                            <div class="price-table__cost">
+                                 900 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                44.006
+                            </div>
+                            <div class="price-table__name">
+                                Размораживание ооцитов
+                            </div>
+                            <div class="price-table__cost">
+                                 16 200 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                45.001
+                            </div>
+                            <div class="price-table__name">
+                                Вспомогательный хетчинг
+                            </div>
+                            <div class="price-table__cost">
+                                 8 600 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                45.002
+                            </div>
+                            <div class="price-table__name">
+                                Биопсия эмбрионов
+                            </div>
+                            <div class="price-table__cost">
+                                 42 400 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                45.003
+                            </div>
+                            <div class="price-table__name">
+                                Биопсия эмбриона в натуральном цикле
+                            </div>
+                            <div class="price-table__cost">
+                                 19 200 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                45.004
+                            </div>
+                            <div class="price-table__name">
+                                Преимплантационный скрининг одного эмбриона
+                            </div>
+                            <div class="price-table__cost">
+                                 25 000 ₽
                             </div>
                         </div>
                     </footer>
                 </section>
                 <section class="price__item price__item--last dropdown">
                     <header>
-                        <h6 class="section-title section-title--h6 fw-500">Препараты СО</h6>
+                        <h6 class="section-title section-title--h6 fw-500">Препараты для стимуляции яичников</h6>
                         <div class="plus">
                             <span></span>
                             <span></span>
@@ -723,9 +947,10 @@
                             </div>
                             <div class="price-table__name">
                                 Введение препарата Гонал-ф 300 МЕ
+
                             </div>
                             <div class="price-table__cost">
-                                5 400 ₽
+                                 8 100 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -736,7 +961,7 @@
                                 Введение препарата Гонал-ф 75 МЕ
                             </div>
                             <div class="price-table__cost">
-                                1 200 ₽
+                                 2 100 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -747,7 +972,7 @@
                                 Введение препарата Гонал-ф 450 МЕ
                             </div>
                             <div class="price-table__cost">
-                                8 700 ₽
+                                 12 150 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -758,95 +983,316 @@
                                 Введение препарата Гонал-ф 900 МЕ
                             </div>
                             <div class="price-table__cost">
-                                17 400 ₽
+                                 24 300 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.001
+                                51.005
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 300 МЕ
+                                Введение препарата Диферелин 0,1
                             </div>
                             <div class="price-table__cost">
-                                5 400 ₽
+                                 700 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.002
+                                51.006
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 75 МЕ
+                                Введение препарата Цетротид
                             </div>
                             <div class="price-table__cost">
-                                1 200 ₽
+                                1 900 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.003
+                                51.007
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 450 МЕ
+                                Введение препарата Овитрель
                             </div>
                             <div class="price-table__cost">
-                                8 700 ₽
+                                 4 300 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.004
+                                51.008
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 900 МЕ
+                                Введение препарата Луверис
                             </div>
                             <div class="price-table__cost">
-                                17 400 ₽
+                                 2 500 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.001
+                                51.009
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 300 МЕ
+                                Введение препарата Перговерис
                             </div>
                             <div class="price-table__cost">
-                                5 400 ₽
+                                 3 600 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.002
+                                51.010
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 75 МЕ
+                                Введение препарата Декапептил 0,1 мг
                             </div>
                             <div class="price-table__cost">
-                                1 200 ₽
+                                 700 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.003
+                                51.011
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 450 МЕ
+                                Введение препарата Декапептил 3,75 мг
                             </div>
                             <div class="price-table__cost">
-                                8 700 ₽
+                                 8 900 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
-                                51.004
+                                51.012
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 900 МЕ
+                                Введение препарата Диферелин 3,75 мг
                             </div>
                             <div class="price-table__cost">
-                                17 400 ₽
+                                 8 900 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.013
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Менопур Мультидоза 600 МЕ
+                            </div>
+                            <div class="price-table__cost">
+                                 17 100 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.014
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Менопур Мультидоза 1200 МЕ
+                            </div>
+                            <div class="price-table__cost">
+                                 34 200 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.015
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Менопур 75 МЕ
+                            </div>
+                            <div class="price-table__cost">
+                                 1 950 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.016
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Оргалутран
+                            </div>
+                            <div class="price-table__cost">
+                                 1 900 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.017
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Пурегон 100 МЕ
+                            </div>
+                            <div class="price-table__cost">
+                                 2 600 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.018
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Пурегон 300 МЕ
+                            </div>
+                            <div class="price-table__cost">
+                                 7 800 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.019
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Пурегон 600 МЕ
+                            </div>
+                            <div class="price-table__cost">
+                                 15 600 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.020
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Пурегон 900 МЕ
+                            </div>
+                            <div class="price-table__cost">
+                                 23 400 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.021
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Элонва 150
+                            </div>
+                            <div class="price-table__cost">
+                                 27 200 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.022
+                            </div>
+                            <div class="price-table__name">
+                                Использование ручки для инъекций Пурегон-Пэн
+                            </div>
+                            <div class="price-table__cost">
+                                 1 300 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.023
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Альтерпур 75 МЕ
+                            </div>
+                            <div class="price-table__cost">
+                                 1 850 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.024
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Мериоферт 75 МЕ
+                            </div>
+                            <div class="price-table__cost">
+                                 1 850 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.027
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Волювен 6% - 1000 мл
+                            </div>
+                            <div class="price-table__cost">
+                                 1 800 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                52.001
+                            </div>
+                            <div class="price-table__name">
+                                Назначение препарата Прогинова
+                            </div>
+                            <div class="price-table__cost">
+                                 680 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                52.002
+                            </div>
+                            <div class="price-table__name">
+                                Назначение препарата Дивигель1.0 г
+                            </div>
+                            <div class="price-table__cost">
+                                 50 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                52.003
+                            </div>
+                            <div class="price-table__name">
+                                Назначение препарата Утрожестан 100 мг
+                            </div>
+                            <div class="price-table__cost">
+                                 520 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                52.004
+                            </div>
+                            <div class="price-table__name">
+                                Назначение препарата Утрожестан 200 мг
+                            </div>
+                            <div class="price-table__cost">
+                                 520 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                52.005
+                            </div>
+                            <div class="price-table__name">
+                                Назначение препарата Дюфастон
+                            </div>
+                            <div class="price-table__cost">
+                                 670 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                52.006
+                            </div>
+                            <div class="price-table__name">
+                                Назначение препарата Микрогинон
+                            </div>
+                            <div class="price-table__cost">
+                                 510 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                52.007
+                            </div>
+                            <div class="price-table__name">
+                                Назначение препарата Клостилбегит
+
+                            </div>
+                            <div class="price-table__cost">
+                                 670 ₽
                             </div>
                         </div>
                     </footer>
@@ -860,9 +1306,9 @@
     <div class="container">
         <div class="row m-0 footer__inner text-white">
             <div class="col-auto f-column">
-                <div class="footer__item logo footer__logo col-lg-auto">
+                <a href="/" class="footer__item logo footer__logo col-lg-auto">
                     <img src="assets/img/logo-white.png" alt="logo-white">
-                </div>
+                </a>
                 <a class="pro-doctorov" href="https://prodoctorov.ru/samara/lpu/79148-art-volga/#information"
                     target="_blank">
                     <img src="assets/img/prodoctorov.png" alt="pro-doctorov">
@@ -1081,7 +1527,8 @@
                     <input class="form__input popup-form__input" type="text" name="name" id="name"
                         placeholder="Ваше имя">
                     <input class="form__input popup-form__input form__phone" type="tel" name="tel" id="tel"
-                        placeholder="Номер телефона" pattern="\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                        placeholder="Номер телефона"  required>
+                        <!-- pattern="\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" -->
                 </div>
                 <div class="form__row">
                     <input class="form__input popup-form__input w-100" type="text" name="doctor" id="doctor"
@@ -1116,7 +1563,8 @@
                 <div class="form__row popup-form__row popup-form__col--mobile">
                     <input class="form__input popup-form__input" type="text" name="name" id="name" placeholder="Ваше имя">
                     <input class="form__input popup-form__input form__phone" type="tel" name="tel" id="tel"
-                        placeholder="Номер телефона" pattern="\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                        placeholder="Номер телефона" required>
+                        <!-- pattern="\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" -->
                 </div>
                 <div class="form__row popup-form__row">
                     <label class="policy">
@@ -1176,5 +1624,39 @@
             </div>
         </div>
     </div>
+
+        <div class="" style="display:none">
+            <div class="popup">
+                <form action="" class="form popup-form" id="callback" method="POST">
+                    <h2 class="title text-center">Заказать звонок</h2>
+                    <p class="text text-center popup-form__text">Оставьте контакты и мы с Вами свяжемся</p>
+
+                    <div class="form-messages">
+                        <p class="form-message form-message--success">Заявка отправлена!</p>
+                        <p class="form-message form-message--error">Ошибка!</p>
+                    </div>
+
+                    <div class="form__row popup-form__row popup-form__col--mobile">
+                        <input class="form__input popup-form__input" type="text" name="name" id="name"
+                            placeholder="Ваше имя">
+                        <input class="form__input popup-form__input form__phone" type="tel" name="tel" id="tel"
+                            placeholder="Номер телефона"
+                            required>
+                            <!-- pattern="\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" -->
+                    </div>
+                    <div class="form__row popup-form__row">
+                        <label class="policy">
+                            <input class="form__checkbox form-popup__checkbox" type="checkbox" name="agreement"
+                                id="checkbox-popup-1" required checked>
+                            <span>Ввод номера телефона подтверждает ваше согласие с <a href="#policy"
+                                    class="link link--underlined popup">Политикой конфиденциальности</a></span>
+                        </label>
+                    </div>
+                    <div class="text-center">
+                        <input class="btn btn--middlesize form-popup__btn" type="submit" value="Заказать звонок">
+                    </div>
+                </form>
+            </div>
+        </div>
 
 </html>
