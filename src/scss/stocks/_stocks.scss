@@ -15,6 +15,35 @@
         width: 100%;
         height: 181px;
     }
+    &-content{
+        &__inner{
+            padding: 30px 0;
+            padding-bottom: 0;
+        }
+        &__title{
+            padding-bottom: 30px;
+        }
+        &-text{
+            color: #37373E;
+        }
+        time{
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: 300;
+            color: #735184;
+        }
+    }
+    @media (max-width: 768px) {
+        &-content {
+            &__inner {
+                padding-bottom: 0;
+            }
+            time{
+                font-size: 18px;
+            }
+        }
+    }
     @media (max-width: 500px){
         min-height: 300px;
         margin-bottom: 20px;
@@ -23,6 +52,11 @@
         }
         &-img{
             height: 150px;
+        }
+        &-content{
+            &__title{
+                padding-bottom: 15px;
+            }
         }
     }
 }
