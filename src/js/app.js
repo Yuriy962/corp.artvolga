@@ -180,6 +180,12 @@ $(window).on("load", function () {
         },
       ],
     });
+
+    $(".tabs-content__item:not(:first-child)").on("load", function () {
+      if ($(".tabs-content__item").hasClass("tabs-content__item--active")) {
+        $(".tabs-content__item").removeClass('tabs-content__item--active"');
+      }
+    });
   }
   $(".company-photos").slick({
     infinite: true,
@@ -223,35 +229,35 @@ $(window).on("load", function () {
     $(this).toggleClass("dropdown--active");
     $(this).find(".dropdown-content").slideToggle();
   });
-  //  ymaps.ready(init);
+  ymaps.ready(init);
 
-  //  function init() {
-  //    var myMap = new ymaps.Map(
-  //      "YaMaps",
-  //      {
-  //        center: [53.201823, 50.126729],
-  //        zoom: 9,
-  //      },
-  //      {
-  //        searchControlProvider: "yandex#search",
-  //      }
-  //    );
+  function init() {
+    var myMap = new ymaps.Map(
+      "YaMaps",
+      {
+        center: [53.201823, 50.126729],
+        zoom: 9,
+      },
+      {
+        searchControlProvider: "yandex#search",
+      }
+    );
 
-  //    myMap.geoObjects.add(
-  //      new ymaps.Placemark(
-  //        [53.201709, 50.126451],
-  //        {
-  //          balloonContent: "цвет <strong>клиника Art-volga</strong>",
-  //        },
-  //        {
-  //          preset: 'islands#icon',
-  //          // iconColor: '#0095b6',
-  //          iconLayout: "default#image",
-  //          iconImageHref: "../assets/img/icons/mark.png",
-  //        }
-  //      )
-  //    );
-  //  }
+    myMap.geoObjects.add(
+      new ymaps.Placemark(
+        [53.201709, 50.126451],
+        {
+          balloonContent: "цвет <strong>клиника Art-volga</strong>",
+        },
+        {
+          preset: "islands#icon",
+          // iconColor: '#0095b6',
+          iconLayout: "default#image",
+          iconImageHref: "../assets/img/icons/mark.png",
+        }
+      )
+    );
+  }
 
   // Отправка формы
   $("form").on("submit", function (e) {
@@ -288,13 +294,26 @@ $(window).on("load", function () {
   });
 
   // $('input[type="tel"]').inputmask("+7 (999) 999-99-99");
-  // Вывод врача на главной странице
+  //Вывод врача в форме на главной странице
   $(".stuff__item .btn").on("click", function () {
-    let doctorName = $(this).closest(".stuff__info").find(".stuff__name").text();
+    let doctorName = $(this)
+      .closest(".stuff__info")
+      .find(".stuff__name")
+      .text();
     $("#order").find('input[name="doctor"]').val(doctorName);
   });
+  // Вывод врача в форме на детальной странице услуг
   $(".doctor .btn").on("click", function () {
-    let doctorName = $(this).closest(".doctor__footer").find(".doctor__name").text();
+    let doctorName = $(this)
+      .closest(".doctor__footer")
+      .find(".doctor__name")
+      .text();
     $("#order").find('input[name="doctor"]').val(doctorName.trim());
+  });
+  // Вывод врача в форме на детальной странице врача
+  $(".doctor-page .btn").on("click", function () {
+    $("#order")
+      .find('input[name="doctor"]')
+      .val($(".doctor__name").text().trim());
   });
 });
