@@ -1,0 +1,41 @@
+.news{
+    &__item{
+        margin-bottom: 20px;
+        padding: 35px;
+        display: block;
+        @extend .experience__item;
+        color: #37373E;
+        .list-link{
+            margin-top: 20px;
+            right: 0px;
+            transition: right .3s;
+        }
+        &:hover{
+            .list-link {
+                right: -18px;
+            }
+        }
+    }
+    footer{
+        overflow: hidden;
+    }
+    &__date{
+        @extend .experience__dates;
+    }
+    &__title{
+        margin-bottom: 20px;
+        font-size: 24px;
+        @extend .experience__title;
+    }
+    &__announce{
+        font-size: 19px;
+        @extend .experience__education;
+    }
+    @media (max-width: 480px){
+        &__item {
+            .list-link {
+                margin-top: 10px;
+            }
+        }
+    }
+}
