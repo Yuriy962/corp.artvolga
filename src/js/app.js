@@ -316,4 +316,9 @@ $(window).on("load", function () {
       .find('input[name="doctor"]')
       .val($(".doctor__name").text().trim());
   });
+
+  $(".question").on('click', function () {
+    $(this).toggleClass("question--active");
+    $(this).find('.question__answer').slideToggle();
+  });
 });
