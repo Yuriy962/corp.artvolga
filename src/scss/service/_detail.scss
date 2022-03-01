@@ -8,6 +8,13 @@
     }
 }
 .service{
+    &-img{
+        max-width: 100%;
+        max-height: 354px;
+        object-fit: cover;
+        border-radius: 18px;
+        margin-bottom: 30px;
+    }
     &-block{
         padding: 50px;
         border: 1px solid #EFEFF5;
