@@ -996,7 +996,7 @@ input {
         padding-left: 0;
         padding-right: 0;
         padding-bottom: 0;
-        input[type="email"]{
+        input:not([type='submit']){
             max-width: 378px;
         }
         .btn{
@@ -1018,7 +1018,7 @@ input {
     }
     @media (max-width: 1370px){
         &--footer {
-            input[type="email"] {
+            input:not([type='submit']) {
                 max-width: 378px;
                 margin-bottom: 20px;
             }
