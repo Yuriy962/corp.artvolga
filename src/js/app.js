@@ -31,6 +31,12 @@ window.addEventListener("DOMContentLoaded", () => {
     //     })
     // );
   });
+  $(".menu__item.has-child").on("click", function () {
+    $(this).find("menu__link--main").css("left", "0");
+  });
+  $(".menu--sub__item--back").on('click', function () {
+    $(this).parent().css('left', '-100%');
+  });
 
   document.querySelectorAll('.tabs-triggers__item').forEach(item => {
     item.addEventListener('click', function (e) {
