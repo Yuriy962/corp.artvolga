@@ -1,7 +1,12 @@
 .company{
+    &-slider{
+        .section-title{
+            padding-bottom: 1.5rem;
+        }
+    }
     &-photos{
-        padding-top: 50px;
-        left: -40px;
+        padding-top: 20px;
+        left: 0px;
     }
     &-photo{
         padding-right: 30px;
@@ -22,14 +27,16 @@
         }
     }
     @media (max-width: 1200px) {
+        &-slider {
+            .section-title {
+                padding-bottom: 50px;
+            }
+        }
         &-photos{
-            left: -75px;
+            padding-top: 50px;
         }
     }
     @media (max-width: 768px) {
-        &-photos{
-            left: -25px;
-        }
         &-photo {
             img {
                 height: auto;
@@ -37,9 +44,6 @@
         }
     }
     @media (max-width: 700px) {
-        &-photos{
-            left: 30px;
-        }
         &-photo {
             img {
                 height: auto;
@@ -49,7 +53,6 @@
     @media (max-width: 576px){
         &-photos{
             padding-top: 80px;
-            left: 0;
         }
         &-photo{
             padding-right: 0;

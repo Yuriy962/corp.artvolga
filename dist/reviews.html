@@ -10,136 +10,154 @@
     </head>
 
 <body>
-    <header class="header header--white">
+    <header class="header">
         <div class="container">
-            <div class="header__inner">
-                <div class="header__header">
-                    <a href="/">
-                        <picture class="logo logo--header">
-                            <source media="(min-width: 993px)" srcset="assets/img/logo.png">
-                            <source media="(max-width: 992px)" srcset="assets/img/logo-mobile.png">
-                            <img class="logo__img" src="assets/img/logo.png" alt="logo">
-                        </picture>
-                    </a>
-                    <a class="phone phone--header" href="tel:88462053322">8 (846) 205-33-22</a>
-                    <button data-fancybox data-src="#callback" class="btn btn--header">Заказать звонок</button>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+            <div target="_blank" class="header__header">
+                <a href="/">
+                    <picture class="logo logo--header">
+                        <source media="(min-width: 1430px)" srcset="assets/img/logo.png">
+                        <source media="(min-width: 993px)" srcset="assets/img/logo--middle.png">
+                        <source media="(max-width: 992px)" srcset="assets/img/logo-mobile.png">
+                        <img class="logo__img" src="assets/img/logo.png" alt="logo">
+                    </picture>
+                </a>
+                <div class="social">
+                    <a href="https://vk.com/club207802951" target="_blank"><img src="assets/img/icons/vk.svg"
+                            alt="vk"></a>
+                    <a href="viber://chat?number=%2B9879553322" target="_blank"><img
+                            src="assets/img/icons/viber.svg"
+                            alt="vb"></a>
+                    <a href="https://wa.me/89879553322?text=Здравствуйте,%20" target="_blank"><img
+                            src="assets/img/icons/whatsapp.svg" alt="ws"></a>
+                </div>
+                <a class="phone phone--header" href="tel:88462053322">8 (846) 205-33-22</a>
+                <button data-fancybox data-src="#callback" class="btn btn--header">Заказать звонок</button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
         <div class="line"></div>
-        <div class="container">
-            <div class="header__inner">
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="/company.html" class="menu__link">О клинике</a>
-                            <!-- <svg class="menu-arrow">
-                                <use xlink:href="#arrow-menu"></use>
-                            </svg>
-                            <ul class="menu__list menu--sub__list">
-                                <li class="menu__item menu--sub__item menu--sub__item--first">
-                                    <a href="/company.html" class="menu__link menu--sub__link">О клинике</a>
-                                    <svg class="menu-arrow">
-                                        <use xlink:href="#arrow-menu"></use>
-                                    </svg>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="" class="menu__link menu--sub__link">Новости</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="" class="menu__link menu--sub__link">Отзывы</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="" class="menu__link menu--sub__link">Оборудование</a>
-                                </li>
-                            </ul> -->
-                        </li>
-                        <li class="menu__item has-child">
-                            <!-- <a href="/service-detail.html" class="menu__link menu__link--main">Услуги</a> -->
-                            <span class="menu__link menu__link--main">Услуги</span>
-                            <svg class="menu-arrow">
-                                <use xlink:href="#arrow-menu"></use>
-                            </svg>
-                            <ul class="menu__list menu--sub__list">
-                                <li class="menu__item menu--sub__item menu--sub__item--back">
-                                    <span class="menu__link menu__link--main">Услуги</span>
-                                    <svg class="menu-arrow">
-                                        <use xlink:href="#arrow-menu"></use>
-                                    </svg>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="/eco-samara.html" class="menu__link menu--sub__link">ЭКО</a>
-                                    <svg class="menu-arrow">
-                                        <use xlink:href="#arrow-menu"></use>
-                                    </svg>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="/iksi.html" class="menu__link menu--sub__link">ИКСИ</a>
-                                    <svg class="menu-arrow">
-                                        <use xlink:href="#arrow-menu"></use>
-                                    </svg>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="/vmi.html" class="menu__link menu--sub__link">ВМИ</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="/vmisd.html" class="menu__link menu--sub__link">ВМИСД</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="/pgt.html" class="menu__link menu--sub__link">ПГТ</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="/otlozhennoe-materinstvo.html"
-                                        class="menu__link menu--sub__link">Отложенное материнство</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="/donorstvo-yajcekletok.html"
-                                        class="menu__link menu--sub__link">Донорство яйцеклеток</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- <li class="menu__item">
-                            <a href="doctors/" class="menu__link">Врачи</a>
-                        </li> -->
-                        <li class="menu__item">
-                            <a href="/prices.html" class="menu__link">Цены</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="/stocks.html" class="menu__link">Акции</a>
-                        </li>
-                        <!-- <li class="menu__item">
-                            <a href="patients/" class="menu__link">Пациетам</a>
-                        </li> -->
-                        <!-- <li class="menu__item has-child">
-                            <a href="donors/" class="menu__link">Донорам</a>
-                            <svg class="menu-arrow">
-                                <use xlink:href="#arrow-menu"></use>
-                            </svg>
-                            <ul class="menu__list menu--sub__list">
-                                <li class="menu__item menu--sub__item">
-                                    <a href="" class="menu__link menu--sub__link">Блог</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="" class="menu__link menu--sub__link">Экспертное мнение</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="" class="menu__link menu--sub__link">Документы </a>
-                                </li>
-                            </ul>
-                        </li> -->
-                        <li class="menu__item">
-                            <a href="/documents.html" class="menu__link">Лицензии и документы</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="/contacts.html" class="menu__link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
+        <div class="header__fixed">
+            <div class="container">
+                <div class="header__inner">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item has-child">
+                                <a href="/company.html" class="menu__link menu__link--main">О клинике</a>
+                                <svg class="menu-arrow">
+                                    <use xlink:href="#arrow-menu"></use>
+                                </svg>
+                                <ul class="menu__list menu--sub__list">
+                                    <li class="menu__item menu__item--back d-flex d-md-none">
+                                        <span class="menu__link">О клинике</span>
+                                        <svg class="menu-arrow">
+                                            <use xlink:href="#arrow-menu"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/documents.html" class="menu__link menu--sub__link">Лицензии и документы</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/reviews.html" class="menu__link menu--sub__link">Отзывы</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/news.html" class="menu__link menu--sub__link">Новости</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/questions.html" class="menu__link menu--sub__link">Вопрос-ответ</a>
+                                    </li>
+                                    <!-- <li class="menu__item menu--sub__item">
+                                        <a href="/tech.html" class="menu__link menu--sub__link">Оборудование</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/" class="menu__link menu--sub__link">Только в ART Volga</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/expert.html" class="menu__link menu--sub__link">Экспертное мнение</a>
+                                    </li> -->
+                                </ul>
+                            </li>
+                            <li class="menu__item has-child">
+                                <span class="menu__link menu__link--main">Услуги</span>
+                                <svg class="menu-arrow">
+                                    <use xlink:href="#arrow-menu"></use>
+                                </svg>
+                                <ul class="menu__list menu--sub__list">
+                                    <li class="menu__item menu__item--back d-flex d-md-none">
+                                        <span class="menu__link">Услуги</span>
+                                        <svg class="menu-arrow">
+                                            <use xlink:href="#arrow-menu"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/eco-samara.html" class="menu__link menu--sub__link">ЭКО</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/iksi.html" class="menu__link menu--sub__link">ИКСИ</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/vmi.html" class="menu__link menu--sub__link">ВМИ</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/vmisd.html" class="menu__link menu--sub__link">ВМИСД</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/pgt.html" class="menu__link menu--sub__link">ПГТ</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/otlozhennoe-materinstvo.html"
+                                            class="menu__link menu--sub__link">Отложенное материнство</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/donorstvo-yajcekletok.html"
+                                            class="menu__link menu--sub__link">Донорство яйцеклеток</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/prices.html" class="menu__link menu__link--main">Цены</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/doctors.html" class="menu__link menu__link--main">Специалисты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/stocks.html" class="menu__link menu__link--main">Акции</a>
+                            </li>
+                            <!-- <li class="menu__item has-child">
+                                <span class="menu__link menu__link--main">Донорам</span>
+                                <svg class="menu-arrow">
+                                    <use xlink:href="#arrow-menu"></use>
+                                </svg>
+                                <ul class="menu__list menu--sub__list">
+                                    <li class="menu__item menu__item--back d-flex d-md-none">
+                                        <span class="menu__link">Донорам</span>
+                                        <svg class="menu-arrow">
+                                            <use xlink:href="#arrow-menu"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/surrogacy.html" class="menu__link menu--sub__link">Суррогатное
+                                            материнство</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/donorom-yajtsekletok.html" class="menu__link menu--sub__link">Донорам
+                                            спермы</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/donorom-spermy.html" class="menu__link menu--sub__link">Донорам
+                                            яйцеклеток</a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <li class="menu__item">
+                                <a href="/contacts.html" class="menu__link menu__link--main">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -153,15 +171,153 @@
                 <a href="#" class="breadcrumbs__item breadcrumbs__item--active">Отзывы</a>
             </div>
             <article class="section reviews">
+                <section class="reviews">
+                    <div class="reviews__inner mt-0">
+                        <h5 class="section-title section-title--h5 doctor-page__title">Отзывы о наших врачах</h5>
+                        <div class="reviews__list">
+                            <section class="review">
+                                <header class="review__info">
+                                    <div class="rating">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                    </div>
+                                    <!-- <a href="" class="review__phone phone">
+                                        +7-927-00XXXXX
+                                    </a> -->
+                                    <time class="review__date">
+                                        10.08.21
+                                    </time>
+                                </header>
+                                <footer>
+                                    <h5 class="section-title section-title--h5 review__title">
+                                        Настя
+                                    </h5>
+                                    <div class="text review__text">
+                                        Спасибо нашему прекрасному доктору за детишек. Я, больше 10 лет ходила по врачам
+                                        разных чинов и званий. В бюджетных учреждениях поставили диагноз «бесплодие» и
+                                        по сути, отвернулись. И вот дорога вывела к нему, честному, эрудированному,
+                                        доброму профессионалу своего дела. Сергей Норенци изучил предыдущие
+                                        исследования, назначил консультацию гематолога. Через три месяца лечения и
+                                        наблюдения проучила первую беременность. Рекомендую Сергея Норенци. Дай вам Бог
+                                        всем здоровых и таких долгожданных детишек.
+                                    </div>
+                                </footer>
+                            </section>
+                            <section class="review">
+                                <header class="review__info">
+                                    <div class="rating">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                    </div>
+                                    <!-- <a href="" class="review__phone phone">
+                                        +7-927-00XXXXX
+                                    </a> -->
+                                    <time class="review__date">
+                                        05.09.21
+                                    </time>
+                                </header>
+                                <footer>
+                                    <h5 class="section-title section-title--h5 review__title">
+                                        Ольга
+                                    </h5>
+                                    <div class="text review__text">
+                                        Хочу выразить огромную благодарность Гукасяну Сергею Норенци! Это просто
+                                        чудо-врач! Профессионал своего дела! Он не просто врач, который ходит на работу,
+                                        а он действительно болеет за своих пациенток и делает сотни пар счастливыми!
+                                        Благодаря ему я получила возможность испытать счастье материнства! От меня
+                                        отворачивались многие репродуктологи, а Сергей Норенци взял и сотворил чудо,
+                                        которое теперь рядышком сопит!
+                                    </div>
+                                </footer>
+                            </section>
+                            <section class="review">
+                                <header class="review__info">
+                                    <div class="rating">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                    </div>
+                                    <!-- <a href="" class="review__phone phone">
+                                        Скрытый
+                                    </a> -->
+                                    <time class="review__date">
+                                        5.06.21
+                                    </time>
+                                </header>
+                                <footer>
+                                    <h5 class="section-title section-title--h5 review__title">
+                                        Мария
+                                    </h5>
+                                    <div class="text review__text">
+                                        Пастухова Елена Алексеевна сделала чудо. Ставили синдром раннего истощения
+                                        яичников. Бесплодие. Один фолликул и то дохлый. Лечились долго, усердно. Пришли
+                                        к выводу, что надо ЭКО. Но и с ЭКО не так уж много шансов. И случилось чудо, я
+                                        забеременела. Я не могла поверить в это. Я очень благодарна Елене Александровне.
+                                        Она шикарный врач. Если бы не она, у меня бы не было моего солнышка уже как 5
+                                        месяцев. Спасибо ей огромнейшее.
+                                    </div>
+                                </footer>
+                            </section>
+                            <section class="review">
+                                <header class="review__info">
+                                    <div class="rating">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
+                                    </div>
+                                    <!-- <a href="" class="review__phone phone">
+                                        Скрытый
+                                    </a> -->
+                                    <time class="review__date">
+                                        09.10.2021
+                                    </time>
+                                </header>
+                                <footer>
+                                    <h5 class="section-title section-title--h5 review__title">
+                                        Валерия
+                                    </h5>
+                                    <div class="text review__text">
+                                        Пастухова Елена Александровна - настоящий профессионал своего дела! Всё чётко и
+                                        очень подробно объясняет, никаких лишних назначений не делает. Всё чётко и по
+                                        делу! Самое главное - это строго соблюдать все её рекомендации и, как говорится,
+                                        будет вам счастье! Спасибо Елене Александровне за очень долгожданную
+                                        беременность, за счастье, путь к которому был сложен и долог! Главное, не
+                                        отпускать руки, верить и доверять своему врачу.
+                                    </div>
+                                </footer>
+                            </section>
+                        </div>
+                        <!-- <div class="reviews__footer">
+                            <span>Посмотреть в источнике </span>
+                            <div class="doctor-page__links">
+                                <a href="https://prodoctorov.ru/samara/vrach/" class="doctor__link"
+                                    target="_blank">
+                                    <img src="assets/img/icons/rec/prodoctorov.png" alt="продокторов">
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+
                 <div class="section__inner">
                     <div class="container">
                         <h2 class="section-title section-title--h2">Отзывы о нашей работе</h2>
                         <div class="row blocks">
                             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                                <a href="https://prodoctorov.ru/samara/lpu/79148-art-volga/otzivi/" target="_blank"
-                                    class="blocks__item reviews__item">
-                                    <img src="assets/img/mainpage/feedback/prodoktorov.png" alt="prodoctorov"
-                                        class="blocks-img reviews-img">
+                                <a href="https://prodoctorov.ru/samara/lpu/79148-art-volga/otzivi/"
+                                    target="_blank" class="blocks__item reviews__item">
+                                    <img src="assets/img/mainpage/feedback/prodoktorov.png"
+                                        alt="prodoctorov" class="blocks-img reviews-img">
                                     <p class="list-link">
                                         <span>Оставить отзыв</span>
                                     </p>
@@ -170,8 +326,8 @@
                             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                                 <a href="https://yandex.ru/maps/org/art_volga/194816501802/?ll=50.126451%2C53.201709&z=13"
                                     class="blocks__item reviews__item" target="_blank">
-                                    <img src="assets/img/mainpage/feedback/yandex-map.svg" alt="yandex-map"
-                                        class="blocks-img reviews-img">
+                                    <img src="assets/img/mainpage/feedback/yandex-map.svg"
+                                        alt="yandex-map" class="blocks-img reviews-img">
                                     <p class="list-link">
                                         <span>Оставить отзыв</span>
                                     </p>
@@ -180,8 +336,8 @@
                             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
                                 <a href="https://www.google.ru/maps/place/ART-Volga/@53.2016179,50.1244357,17z/data=!3m1!4b1!4m5!3m4!1s0x41661fba842004d1:0xba0ec9be90006504!8m2!3d53.2016179!4d50.1266244"
                                     class="blocks__item reviews__item" target="_blank">
-                                    <img src="assets/img/mainpage/feedback/google-map.png" alt="google-map"
-                                        class="blocks-img reviews-img">
+                                    <img src="assets/img/mainpage/feedback/google-map.png"
+                                        alt="google-map" class="blocks-img reviews-img">
                                     <p class="list-link">
                                         <span>Оставить отзыв</span>
                                     </p>
@@ -201,190 +357,48 @@
                     </div>
                 </div>
 
-                <section class="reviews">
-                    <div class="reviews__inner mt-0">
-                        <h5 class="section-title section-title--h5 doctor-page__title">Отзывы о наших врачах</h5>
-                        <div class="reviews__list">
-                            <section class="review">
-                                <header class="review__info">
-                                    <div class="rating">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                    </div>
-                                    <a href="" class="review__phone phone">
-                                        +7-927-00XXXXX
-                                    </a>
-                                    <time class="review__date">
-                                        Октябрь 2020
-                                    </time>
-                                </header>
-                                <footer>
-                                    <h5 class="section-title section-title--h5 review__title">
-                                        Понравилось
-                                    </h5>
-                                    <div class="text review__text">
-                                        Елена Алексеевна сделала чудо. Ставили синдром раннего истощения яичников.
-                                        Бесплодие. Один фолликул и то дохлый. Лечились долго, усердно. Пришли к выводу,
-                                        что
-                                        надо ЭКО. Но и с ЭКО не так уж много шансов. И случилось чудо, я забеременела.
-                                        Я не могла поверить в это. Я очень благодарна Елене Александровне. Она шикарный
-                                        врач. Если бы не она, у меня бы не было моего солнышка уже как 5 месяцев.
-                                        Спасибо
-                                        ей огромнейшее.
-                                    </div>
-                                </footer>
-                            </section>
-                            <section class="review">
-                                <header class="review__info">
-                                    <div class="rating">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                    </div>
-                                    <a href="" class="review__phone phone">
-                                        +7-927-00XXXXX
-                                    </a>
-                                    <time class="review__date">
-                                        Ноябрь 2019
-                                    </time>
-                                </header>
-                                <footer>
-                                    <h5 class="section-title section-title--h5 review__title">
-                                        Понравилось
-                                    </h5>
-                                    <div class="text review__text">
-                                        Елена Александровна — настоящий профессионал своего дела! Всё чётко и очень
-                                        подробно
-                                        объясняет, никаких лишних назначений не делает. Всё чётко и по делу! Самое
-                                        главное —
-                                        это строго соблюдать все её рекомендации и, как говорится, будет вам счастье!
-                                        Спасибо Елене Александровне за очень долгожданную беременность, за счастье, путь
-                                        к которому был сложен и долог! Главное, не отпускать руки, верить и доверять
-                                        своему
-                                        врачу.
-                                    </div>
-                                </footer>
-                            </section>
-                            <section class="review">
-                                <header class="review__info">
-                                    <div class="rating">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                        <img src="assets/img/icons/star.svg" alt="star" class="star">
-                                    </div>
-                                    <a href="" class="review__phone phone">
-                                        Скрытый
-                                    </a>
-                                    <time class="review__date">
-                                        Июнь 2019
-                                    </time>
-                                </header>
-                                <footer>
-                                    <h5 class="section-title section-title--h5 review__title">
-                                        Понравилось
-                                    </h5>
-                                    <div class="text review__text">
-                                        Елена Александровна — «автор» моих двух сыновей. Суперпрофессионал!
-                                        Замечательный
-                                        доктор, который смотрит вглубь проблемы и предлагает самый короткий путь для
-                                        её решения. После 8 лет бесплодного брака, бесконечных обследований и лечения,
-                                        безысходности и отчаяния, 2008 — Артем, 2014 — Георгий. Каждый день, глядя
-                                        на своих
-                                        сыновей, благодарю Елену Александровну!
-                                    </div>
-                                </footer>
-                            </section>
-                        </div>
-                        <div class="reviews__footer">
-                            <span>Посмотреть в источнике </span>
-                            <div class="doctor-page__links">
-                                <a href="https://prodoctorov.ru/samara/vrach/" class="doctor__link"
-                                    target="_blank">
-                                    <img src="assets/img/icons/rec/prodoctorov.png" alt="продокторов">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </article>
         </div>
     </div>
 </section>
 </main>
-
-        <article class="section subscribe">
-            <div class="section__inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12">
-                            <h2 class="section-title section-title--h2 subscribe__title text-left">Хотите получать новости
-                                и полезные статьи
-                                о репродуктивной медицине?</h2>
-                        </div>
-                        <div class="col-lg-6 col-12">
-                            <div class="subscribe__content">
-                                <p class="text text-left">Администратор ответит на любые Ваши вопросы по ценам, часам приема
-                                    и свободному времени для записи.</p>
-                                <div class="form form--footer">
-                                    <div class="form__wrap">
-                                        <input class="" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-                                        <input class="btn" type="submit" value="Получать письма">
-                                    </div>
-                                    <label class="form__label">
-                                        <input type="checkbox" name="check-subscribe" id="" checked required>
-                                        Соглашаюсь на обработку персональных данных
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<!-- <footer class="footer">
+    <div class="container">
+        <div class="row m-0 footer__inner text-white">
+            <div class="col-auto f-column">
+                <a href="/" class="footer__item logo footer__logo col-lg-auto">
+                    <img src="assets/img/logo-white.png" alt="logo-white">
+                </a>
+                <a class="pro-doctorov" href="https://prodoctorov.ru/samara/lpu/79148-art-volga/#information"
+                    target="_blank">
+                    <img src="assets/img/prodoctorov.png" alt="pro-doctorov">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-5 col-auto">
+                <div class="footer__item footer__contacts">
+                    <p>ООО ИНЕП</p>
+                    <p>ИНН/КПП: 6317151218/ 631701001</p>
+                    <p>ОГРН: 1206300071988</p>
+                    <p>Лицензии: ЛО-63-01-005828</p>
                 </div>
             </div>
-        </article>
-         <footer class="footer">
-             <div class="container">
-                 <div class="row m-0 footer__inner text-white">
-                     <div class="col-auto f-column">
-                         <a href="/" class="footer__item logo footer__logo col-lg-auto">
-                             <img src="assets/img/logo-white.png" alt="logo-white">
-                         </a>
-                         <a class="pro-doctorov" href="https://prodoctorov.ru/samara/lpu/79148-art-volga/#information"
-                             target="_blank">
-                             <img src="assets/img/prodoctorov.png" alt="pro-doctorov">
-                         </a>
-                     </div>
-                     <div class="col-lg-3 col-md-5 col-auto">
-                         <div class="footer__item footer__contacts">
-                             <p>ООО ИНЕП</p>
-                             <p>ИНН/КПП: 6317151218/ 631701001</p>
-                             <p>ОГРН: 1206300071988</p>
-                             <p>Лицензии: ЛО-63-01-005828</p>
-                         </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6 col-auto p-sm-0">
-                         <div class="footer__item footer__text text-white">
-                             Вся представленная на сайте информация носит информационный характер и
-                             не является публичной офертой
-                         </div>
-                     </div>
-                     <div class="col-lg-3 col-md-6 col-auto">
-                         <div class="footer__item footer__links text-white">
-                             <a data-fancybox href="#policy" class="policy popup">Политика конфиденциальности</a>
-                             <p>Создание сайтов - <a href="https://seoprostor.ru" class="author" target="_blank">SEO
-                                     Простор</a></p>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </footer>
-<!--         <footer class="footer">
+            <div class="col-lg-3 col-md-6 col-auto p-sm-0">
+                <div class="footer__item footer__text text-white">
+                    Вся представленная на сайте информация носит информационный характер и
+                    не является публичной офертой
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-auto">
+                <div class="footer__item footer__links text-white">
+                    <a data-fancybox href="#policy" class="policy popup">Политика конфиденциальности</a>
+                    <span>Создание сайтов - &nbsp;&nbsp; <a href="https://seoprostor.ru" class="author" target="_blank">SEO
+                            Простор</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> -->
+        <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
                     <div class="row">
@@ -395,38 +409,40 @@
                                 лицензия № ЛО-63-01-005828
                             </p>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 footer__col footer__col--big footer__order">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6 footer__col footer__col--big footer__order">
                             <nav class="footer__menu">
                                 <ul class="footer__list">
                                     <li class="footer__item footer__item--active">
                                         <div class="footer__header">
-                                            <a href="#" class="footer__link">Услуги</a>
+                                            <a href="/company.html" class="footer__link">О клинике</a>
                                             <svg class="menu-arrow">
                                                 <use xlink:href="#arrow-menu"></use>
                                             </svg>
                                         </div>
                                         <ul class="footer__list footer__list--sub">
                                             <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">Диагностика причин бесплодия</a>
+                                                <a href="/documents.html"
+                                                    class="footer__link footer__link--sub">Лицензии и документы</a>
                                             </li>
                                             <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">Женское бесплодие</a>
+                                                <a href="/reviews.html"
+                                                    class="footer__link footer__link--sub">Отзывы</a>
                                             </li>
                                             <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">Мужское бесплодие</a>
+                                                <a href="/news.html" class="footer__link footer__link--sub">Новости</a>
+                                            </li>
+                                            <!-- <li class="footer__item footer__item--sub">
+                                                <a href="/tech.html"
+                                                    class="footer__link footer__link--sub">Оборудование</a>
                                             </li>
                                             <li class="footer__item footer__item--sub">
-                                                Экстракорпоральное оплодотворение <a href="" class="footer__link footer__link--sub">(ЭКО)</a>
+                                                <a href="#" class="footer__link footer__link--sub">Только в ART
+                                                    Volga</a>
                                             </li>
                                             <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">Внутриматочная инсеминация (ВМИ)</a>
-                                            </li>
-                                            <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">Эмбриология</a>
-                                            </li>
-                                            <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">Ведение беременности</a>
-                                            </li>
+                                                <a href="/expert.html" class="footer__link footer__link--sub">Экспертное
+                                                    мнение</a>
+                                            </li> -->
                                         </ul>
                                     </li>
                                 </ul>
@@ -435,48 +451,58 @@
                         <div class="col-lg-2 col-md-4 col-sm-6 col-6 footer__col footer__order">
                             <nav class="footer__menu">
                                 <ul class="footer__list">
-                                    <li class="footer__item has-child">
+                                    <li class="footer__item footer__item--active has-child">
                                         <div class="footer__header">
-                                            <a href="#" class="footer__link">Пациентам</a>
+                                            <a href="/services.html" class="footer__link">Услуги</a>
                                             <svg class="menu-arrow">
                                                 <use xlink:href="#arrow-menu"></use>
                                             </svg>
                                         </div>
                                         <ul class="footer__list footer__list--sub">
                                             <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">
-                                                    Экспертное мнение
+                                                <a href="/eco-samara.html" class="footer__link footer__link--sub">
+                                                    ЭКО
                                                 </a>
                                             </li>
                                             <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">
-                                                    Вопросы и ответы
+                                                <a href="/iksi.html" class="footer__link footer__link--sub">
+                                                    ИКСИ
                                                 </a>
                                             </li>
                                             <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">
-                                                    Документы
+                                                <a href="/vmi.html" class="footer__link footer__link--sub">
+                                                    ВМИ
+                                                </a>
+                                            </li>
+                                            <li class="footer__item footer__item--sub">
+                                                <a href="/vmisd.html" class="footer__link footer__link--sub">
+                                                    ВМИСД
+                                                </a>
+                                            </li>
+                                            <li class="footer__item footer__item--sub">
+                                                <a href="/pgt.html" class="footer__link footer__link--sub">
+                                                    ПГТ
+                                                </a>
+                                            </li>
+                                            <li class="footer__item footer__item--sub">
+                                                <a href="/otlozhennoe-materinstvo.html"
+                                                    class="footer__link footer__link--sub">
+                                                    Отложенное материнство
+                                                </a>
+                                            </li>
+                                            <li class="footer__item footer__item--sub">
+                                                <a href="/donorstvo-yajcekletok.html"
+                                                    class="footer__link footer__link--sub">
+                                                    Донорство яйцеклеток
                                                 </a>
                                             </li>
                                         </ul>
-                                    </li>
-                                    <li class="footer__item">
-                                        <a href="#" class="footer__link">Врачи</a>
-                                    </li>
-                                    <li class="footer__item">
-                                        <a href="#" class="footer__link">Акции</a>
-                                    </li>
-                                    <li class="footer__item">
-                                        <a href="#" class="footer__link">Цены</a>
-                                    </li>
-                                    <li class="footer__item">
-                                        <a href="#" class="footer__link">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-6 col-6 footer__col footer__order">
-                            <nav class="footer__menu">
+                            <!-- <nav class="footer__menu">
                                 <ul class="footer__list">
                                     <li class="footer__item has-child">
                                         <div class="footer__header">
@@ -486,69 +512,92 @@
                                             </svg>
                                         </div>
                                         <ul class="footer__list footer__list--sub">
-                                            <li class="footer__item footer__item--sub"><a href="#" class="footer__link footer__link--sub">
-                                                Донорство яйцеклетки
-                                            </a></li>
-                                            <li class="footer__item footer__item--sub"><a href="#" class="footer__link footer__link--sub">
-                                                Донорство спермы
-                                            </a></li>
-                                            <li class="footer__item footer__item--sub"><a href="#" class="footer__link footer__link--sub">
-                                                Стать донором
-                                            </a></li>
+                                            <li class="footer__item footer__item--sub"><a href="/surrogacy.html"
+                                                    class="footer__link footer__link--sub">
+                                                    Суррогатное материнство
+                                                </a></li>
+                                            <li class="footer__item footer__item--sub"><a
+                                                    href="/donorom-yajtsekletok.html"
+                                                    class="footer__link footer__link--sub">
+                                                    Донорство яйцеклетки
+                                                </a></li>
+                                            <li class="footer__item footer__item--sub"><a href="/donorom-spermy.html"
+                                                    class="footer__link footer__link--sub">
+                                                    Донорство спермы
+                                                </a></li>
                                         </ul>
                                     </li>
-                                    <li class="footer__item has-child">
-                                        <div class="footer__header">
-                                            <a href="#" class="footer__link">О клинике</a>
-                                            <svg class="menu-arrow">
-                                                <use xlink:href="#arrow-menu"></use>
-                                            </svg>
-                                        </div>
-                                        <ul class="footer__list footer__list--sub">
-                                            <li class="footer__item footer__item--sub">
-                                                <a href="#" class="footer__link footer__link--sub">
-                                                    Отзывы
-                                                </a>
-                                            </li>
-                                            <li class="footer__item footer__item--sub">
-                                                <a href="#" class="footer__link footer__link--sub">
-                                                    Новости
-                                                </a>
-                                            </li>
-                                            <li class="footer__item footer__item--sub">
-                                                <a href="#" class="footer__link footer__link--sub">
-                                                    Оборудование
-                                                </a>
-                                            </li>
-                                        </ul>
+                                    <li class="footer__item">
+                                        <a href="/doctors.html" class="footer__link">Специалисты</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="/stocks.html" class="footer__link">Акции</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="/prices.html" class="footer__link">Цены</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="/contacts.html" class="footer__link">Контакты</a>
                                     </li>
                                 </ul>
-                            </nav>
+                            </nav> -->
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12 footer__col footer__col--big footer__order">
                             <div class="footer__contacts">
-                                <a href="" class="phone phone--footer footer__item--contacts">8 (846) 200-17-19</a>
-                                <address class="address address--footer footer__item--contacts">г. Самара, ул. Пушкина, д. 227</address>
-                                <a href="" class="mail footer__item--contacts">ooo_inep@mail.ru</a>
+                                <a href="tel:88462053322" class="phone phone--footer footer__item--contacts">8
+                                    (846) 205-33-22</a>
+                                <address class="address address--footer footer__item--contacts">г. Самара, ул. Пушкина,
+                                    д. 227</address>
+                                <a href="mailto:clinica@artvolga.site"
+                                    class="mail footer__item--contacts">clinica@artvolga.site</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer__bottom">
+            <div class="footer__inner footer__inner--bordered">
                 <div class="container">
-                    <div class="footer__inner">
-                        <span class="oferta footer__item footer__item--bottom">Вся представленная на сайте информация носит информационный характер и не является
+                    <div class="footer__bottom">
+                        <span class="oferta footer__item footer__item--bottom">Вся представленная на сайте информация
+                            носит информационный характер и не является
                             публичной офертой</span>
-                        <a class="policy policy--footer footer__item footer__item--bottom" href="">Политика конфиденциальности</a>
-                        <span class="author footer__item footer__item--bottom">Создание сайтов - <a href="https://seoprostor.ru/" target="_blank">SEO Простор</a></span>
+                        <a href="#policy" data-fancybox class="policy policy--footer footer__item footer__item--bottom">Политика
+                            конфиденциальности</a>
+                        <span class="author footer__item footer__item--bottom">Создание сайтов - <a
+                                href="https://seoprostor.ru/" target="_blank">SEO Простор</a></span>
                     </div>
                 </div>
             </div>
-        </footer> -->
+        </footer>
 
-        <script src="https://api-maps.yandex.ru/2.1/?apikey=e7d8e641-aaf4-43df-82c0-02b4c39cd17b&lang=ru_RU"
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=59b38a3e-ec6a-4350-8294-b66b2c952233&lang=ru_RU"
             type="text/javascript"></script>
+
+            <!-- Yandex.Metrika counter -->
+            <script type="text/javascript">
+                (function (m, e, t, r, i, k, a) {
+                    m[i] = m[i] || function () {
+                        (m[i].a = m[i].a || []).push(arguments)
+                    };
+                    m[i].l = 1 * new Date();
+                    k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode
+                        .insertBefore(k,
+                            a)
+                })
+                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+                ym(85080238, "init", {
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
+                });
+            </script>
+            <noscript>
+                <div><img src="https://mc.yandex.ru/watch/85080238" style="position:absolute; left:-9999px;" alt="" />
+                </div>
+            </noscript>
+            <!-- /Yandex.Metrika counter -->
         <script src="js/app.min.js"></script>
     </body>
 
@@ -686,7 +735,7 @@
                         <input class="form__input popup-form__input" type="text" name="name" id="name"
                             placeholder="Ваше имя">
                         <input class="form__input popup-form__input form__phone" type="tel" name="tel" id="tel"
-                            placeholder="Номер телефона" 
+                            placeholder="Номер телефона"
                             required>
                             <!-- pattern="\+[7] \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" -->
                     </div>

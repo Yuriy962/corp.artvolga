@@ -1,6 +1,6 @@
 
 .header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0px;
     z-index: 10;
@@ -14,27 +14,100 @@
     &__header {
         display: flex;
         align-items: center;
-        min-height: 88px;
+        min-height: 84px;
     }
 
     .line {
         width: 100%;
         height: 1px;
-        background-color: rgba(251, 251, 252, 0.7);
+        // background-color: rgba(251, 251, 252, 0.7);
+        opacity: .5;
+        background-color: rgba(221, 68, 146, 1);
     }
-
+    &__fixed{
+        position: relative;
+    }
     &--white {
         background-color: #fff;
         box-shadow: 0 0 2px rgb(0, 0, 0, .5);
-        .line {
-            background-color: #E4E4EE;
+    }
+    .social{
+        margin-left: auto;
+        margin-right: 20px;
+        a{
+            width: 24px;
+            height: 24px;
+            margin: 0 3px;
+            display: inline-block;
+            transform: scale(1);
+            transition: transform .3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        img{
+            width: 100%;
         }
     }
 
+    @media (max-width: 1440px){
+        .phone--header{
+            font-size: 18px;
+        }
+        .social {
+            a {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    @media (max-width: 1200px){
+        .phone--header{
+            font-size: 15px;
+        }
+        .social{
+            margin: 0 10px;
+            a{
+                width: 18px;
+            }
+        }
+    }
+    @media (max-width:992px){
+        .phone--header {
+            margin-left: auto;
+            font-size: 22px;
+        }
+        .social{
+            display: none;
+        }
+    }
+    @media (max-width: 768px){
+        &__header{
+            min-height: 88px;
+        }
+    }
+    @media (max-width: 700px){
+        .phone--header{
+            display: none;
+        }
+        .btn--header{
+            margin-left: auto;
+        }
+    }
     @media (max-width: 576px) {
         &__header {
             min-height: 70px;
         }
+        .hamburger{
+            margin-left: auto;
+        }
     }
+
 }
 
+.scroll {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}

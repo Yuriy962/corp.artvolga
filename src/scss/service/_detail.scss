@@ -74,6 +74,17 @@
             }
         }
     }
+    &-form.subscribe {
+        .form__wrap {
+            flex-wrap: nowrap;
+        }
+
+        @media (max-width: 1200px) {
+            input:not([type=submit]) {
+                font-size: 17px;
+            }
+        }
+    }
 }
 .section{
     p{

@@ -1,6 +1,7 @@
 import * as flsFunctions from "./modules/functions.js";
 import * as bootstrap from "../../node_modules/bootstrap/dist/js/bootstrap.min.js";
 import $ from "jquery";
+import Inputmask from "../../node_modules/inputmask/dist/jquery.inputmask.min.js";
 import * as slick from "../../node_modules/slick-carousel/slick/slick.min.js";
 import { Fancybox } from "@fancyapps/ui/";
 
@@ -12,13 +13,32 @@ window.addEventListener("DOMContentLoaded", () => {
   let header = document.querySelector(".header");
   let hamburger = document.querySelector(".hamburger");
   let menu = document.querySelector(".menu");
-  let menuItem = document.querySelectorAll(".menu__item");
+  let headerHeight = document.querySelector(".header").scrollHeight;
+  let fixedMenu = document.querySelector(".header__fixed");
 
   window.addEventListener("scroll", () => {
-    window.pageYOffset >= 80 && window.location.pathname == "/"
-      ? header.classList.add("header--white")
-      : header.classList.remove("header--white");
-    if (window.location.pathname != "/") header.classList.add("header--white");
+    // скроллинг всей шапки
+    document.querySelector(".header__fixed").classList.remove("scroll");
+    if(window.pageYOffset >= 80 && window.location.pathname === "/"){
+      header.classList.add("header--white"),
+      fixedMenu.classList.add("header--white");
+    } else{
+      header.classList.remove("header--white"),
+      fixedMenu.classList.remove("header--white");
+    }    
+    if (window.location.pathname !== "/"){
+      header.classList.add("header--white");
+      fixedMenu.classList.add("header--white");
+    }
+    if ($(window).width() >= 768) {
+      // "липкая шапка"
+      // скроллинг меню из шапки
+      window.pageYOffset >= headerHeight
+        ? fixedMenu.classList.add("scroll")
+        : fixedMenu.classList.remove("scroll");
+    } else {
+        header.classList.add("scroll");
+      }
   });
 
   hamburger.addEventListener("click", () => {
@@ -30,12 +50,12 @@ window.addEventListener("DOMContentLoaded", () => {
     //         menu.classList.toggle("menu--active");
     //     })
     // );
-  });
-  $(".menu__item.has-child").on("click", function () {
-    $(this).find("menu__link--main").css("left", "0");
-  });
-  $(".menu--sub__item--back").on('click', function () {
-    $(this).parent().css('left', '-100%');
+    $(".menu__item.has-child").on("click", function () {;
+      $(this).find(".menu__list").toggleClass("menu__list--active");
+    });
+    $(".menu__item.menu__item--back").on("click", function () {
+        $(this).parent("menu__list").removeClass("menu__list--active");
+    });
   });
 
   document.querySelectorAll('.tabs-triggers__item').forEach(item => {
@@ -85,7 +105,6 @@ $(window).on("load", function () {
       "</svg>" +
       "</button>",
   });
-
   $(".tech-img").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -217,7 +236,7 @@ $(window).on("load", function () {
         },
       },
       {
-        breakpoint: 992,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
         },
@@ -235,23 +254,21 @@ $(window).on("load", function () {
     $(this).toggleClass("dropdown--active");
     $(this).find(".dropdown-content").slideToggle();
   });
-  ymaps.ready(init);
 
-  function init() {
+  ymaps.ready(function() {
     var myMap = new ymaps.Map(
-      "YaMaps",
+      "map",
       {
-        center: [53.201823, 50.126729],
-        zoom: 9,
+        center: [53.201709, 50.126451],
+        zoom: 17,
       },
       {
         searchControlProvider: "yandex#search",
       }
-    );
+    ),
 
-    myMap.geoObjects.add(
-      new ymaps.Placemark(
-        [53.201709, 50.126451],
+      point = new ymaps.Placemark(
+        myMap.getCenter(),
         {
           balloonContent: "цвет <strong>клиника Art-volga</strong>",
         },
@@ -260,10 +277,12 @@ $(window).on("load", function () {
           // iconColor: '#0095b6',
           iconLayout: "default#image",
           iconImageHref: "../assets/img/icons/mark.png",
+          // iconImageSize: [67, 81]
         }
-      )
-    );
-  }
+      );
+      
+    myMap.geoObjects.add(point);
+  });
 
   // Отправка формы
   $("form").on("submit", function (e) {
@@ -276,7 +295,7 @@ $(window).on("load", function () {
     }
     return $.ajax({
       type: "POST",
-      url: "../send.php",
+      url: "send.php",
       data: formData,
       success: function (e) {
         e = JSON.parse(e);
@@ -299,7 +318,7 @@ $(window).on("load", function () {
     // Your options go here
   });
 
-  // $('input[type="tel"]').inputmask("+7 (999) 999-99-99");
+  $('input[type="tel"]').inputmask("+7 (999) 999-99-99");
   //Вывод врача в форме на главной странице
   $(".stuff__item .btn").on("click", function () {
     let doctorName = $(this)
@@ -327,4 +346,29 @@ $(window).on("load", function () {
     $(this).toggleClass("question--active");
     $(this).find('.question__answer').slideToggle();
   });
+});
+$(".slider--banner").on("afterChange", function () {
+  let title = $(".slick-slide.slick-active").find(".forbanner__title").html();
+  let subtitle = $(".slick-slide.slick-active").find(".forbanner__subtitle").html();
+  let href = '';
+  if (title === "" || !$(".slick-slide.slick-active").find(".forbanner__title")) {
+    title = "Современная клиника <span>ЭКО</span>";
+  }
+  if (subtitle === "" || !$(".slick-slide.slick-active").find(".forbanner__subtitle")) {
+    subtitle = "";
+  }
+  switch (title.trim()) {
+    case "День открытых дверей":
+      href = "den-otkrytyh-dverey.html";
+      break;
+    case "ЭКО в подарок*":
+      href = "cikl-eko-v-podarok.html";
+      break;
+    default:
+      href = "company.html";
+      break;
+  }
+  $(".banner--main__info .section-title--main").html(title);
+  $(".banner--main__info .section-subtitle").html(subtitle);
+  $(".btn--banner").attr("href", href);
 });

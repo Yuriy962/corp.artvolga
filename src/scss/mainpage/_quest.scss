@@ -3,11 +3,12 @@
     &__bg{
         position: absolute;
         right: 0;
-        top: 0;
+        // top: 0;
         bottom: 0;
         height: 100%;
         border-radius: 16px 0 0px 16px;
-        max-width: 587px;
+        width: 587px;
+        max-height: 766px;
     }
     &__slider{
         position: relative;
@@ -16,6 +17,7 @@
     &--main{
         &__inner{
             padding: 0;
+            padding-top: 90px;
         }
         &__title{
             width: 50%;
@@ -46,6 +48,7 @@
         margin-top: 10px;
         width: 10px;
         height: 30px;
+        transition: width .3s;
     }
     &--main{
         min-height: 309px;
@@ -57,6 +60,13 @@
     &:hover {
         .question__link{
             width: 25px;
+        }
+    }
+}
+@media (min-width: 1920px){
+    .questions{
+        &__bg{
+            width: 31%;
         }
     }
 }

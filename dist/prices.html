@@ -10,136 +10,154 @@
     </head>
     
 <body>
-    <header class="header header--white">
+    <header class="header">
         <div class="container">
-            <div class="header__inner">
-                <div class="header__header">
-                    <a href="/">
-                        <picture class="logo logo--header">
-                            <source media="(min-width: 993px)" srcset="assets/img/logo.png">
-                            <source media="(max-width: 992px)" srcset="assets/img/logo-mobile.png">
-                            <img class="logo__img" src="assets/img/logo.png" alt="logo">
-                        </picture>
-                    </a>
-                    <a class="phone phone--header" href="tel:88462053322">8 (846) 205-33-22</a>
-                    <button data-fancybox data-src="#callback" class="btn btn--header">Заказать звонок</button>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+            <div target="_blank" class="header__header">
+                <a href="/">
+                    <picture class="logo logo--header">
+                        <source media="(min-width: 1430px)" srcset="assets/img/logo.png">
+                        <source media="(min-width: 993px)" srcset="assets/img/logo--middle.png">
+                        <source media="(max-width: 992px)" srcset="assets/img/logo-mobile.png">
+                        <img class="logo__img" src="assets/img/logo.png" alt="logo">
+                    </picture>
+                </a>
+                <div class="social">
+                    <a href="https://vk.com/club207802951" target="_blank"><img src="assets/img/icons/vk.svg"
+                            alt="vk"></a>
+                    <a href="viber://chat?number=%2B9879553322" target="_blank"><img
+                            src="assets/img/icons/viber.svg"
+                            alt="vb"></a>
+                    <a href="https://wa.me/89879553322?text=Здравствуйте,%20" target="_blank"><img
+                            src="assets/img/icons/whatsapp.svg" alt="ws"></a>
+                </div>
+                <a class="phone phone--header" href="tel:88462053322">8 (846) 205-33-22</a>
+                <button data-fancybox data-src="#callback" class="btn btn--header">Заказать звонок</button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
         <div class="line"></div>
-        <div class="container">
-            <div class="header__inner">
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="/company.html" class="menu__link">О клинике</a>
-                            <!-- <svg class="menu-arrow">
-                                <use xlink:href="#arrow-menu"></use>
-                            </svg>
-                            <ul class="menu__list menu--sub__list">
-                                <li class="menu__item menu--sub__item menu--sub__item--first">
-                                    <a href="/company.html" class="menu__link menu--sub__link">О клинике</a>
-                                    <svg class="menu-arrow">
-                                        <use xlink:href="#arrow-menu"></use>
-                                    </svg>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="" class="menu__link menu--sub__link">Новости</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="" class="menu__link menu--sub__link">Отзывы</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="" class="menu__link menu--sub__link">Оборудование</a>
-                                </li>
-                            </ul> -->
-                        </li>
-                        <li class="menu__item has-child">
-                            <!-- <a href="/service-detail.html" class="menu__link menu__link--main">Услуги</a> -->
-                            <span class="menu__link menu__link--main">Услуги</span>
-                            <svg class="menu-arrow">
-                                <use xlink:href="#arrow-menu"></use>
-                            </svg>
-                            <ul class="menu__list menu--sub__list">
-                                <li class="menu__item menu--sub__item menu--sub__item--back">
-                                    <span class="menu__link menu__link--main">Услуги</span>
-                                    <svg class="menu-arrow">
-                                        <use xlink:href="#arrow-menu"></use>
-                                    </svg>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="/eco-samara.html" class="menu__link menu--sub__link">ЭКО</a>
-                                    <svg class="menu-arrow">
-                                        <use xlink:href="#arrow-menu"></use>
-                                    </svg>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="/iksi.html" class="menu__link menu--sub__link">ИКСИ</a>
-                                    <svg class="menu-arrow">
-                                        <use xlink:href="#arrow-menu"></use>
-                                    </svg>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="/vmi.html" class="menu__link menu--sub__link">ВМИ</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="/vmisd.html" class="menu__link menu--sub__link">ВМИСД</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="/pgt.html" class="menu__link menu--sub__link">ПГТ</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="/otlozhennoe-materinstvo.html"
-                                        class="menu__link menu--sub__link">Отложенное материнство</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="/donorstvo-yajcekletok.html"
-                                        class="menu__link menu--sub__link">Донорство яйцеклеток</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- <li class="menu__item">
-                            <a href="doctors/" class="menu__link">Врачи</a>
-                        </li> -->
-                        <li class="menu__item">
-                            <a href="/prices.html" class="menu__link">Цены</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="/stocks.html" class="menu__link">Акции</a>
-                        </li>
-                        <!-- <li class="menu__item">
-                            <a href="patients/" class="menu__link">Пациетам</a>
-                        </li> -->
-                        <!-- <li class="menu__item has-child">
-                            <a href="donors/" class="menu__link">Донорам</a>
-                            <svg class="menu-arrow">
-                                <use xlink:href="#arrow-menu"></use>
-                            </svg>
-                            <ul class="menu__list menu--sub__list">
-                                <li class="menu__item menu--sub__item">
-                                    <a href="" class="menu__link menu--sub__link">Блог</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="" class="menu__link menu--sub__link">Экспертное мнение</a>
-                                </li>
-                                <li class="menu__item menu--sub__item">
-                                    <a href="" class="menu__link menu--sub__link">Документы </a>
-                                </li>
-                            </ul>
-                        </li> -->
-                        <li class="menu__item">
-                            <a href="/documents.html" class="menu__link">Лицензии и документы</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="/contacts.html" class="menu__link">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
+        <div class="header__fixed">
+            <div class="container">
+                <div class="header__inner">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item has-child">
+                                <a href="/company.html" class="menu__link menu__link--main">О клинике</a>
+                                <svg class="menu-arrow">
+                                    <use xlink:href="#arrow-menu"></use>
+                                </svg>
+                                <ul class="menu__list menu--sub__list">
+                                    <li class="menu__item menu__item--back d-flex d-md-none">
+                                        <span class="menu__link">О клинике</span>
+                                        <svg class="menu-arrow">
+                                            <use xlink:href="#arrow-menu"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/documents.html" class="menu__link menu--sub__link">Лицензии и документы</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/reviews.html" class="menu__link menu--sub__link">Отзывы</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/news.html" class="menu__link menu--sub__link">Новости</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/questions.html" class="menu__link menu--sub__link">Вопрос-ответ</a>
+                                    </li>
+                                    <!-- <li class="menu__item menu--sub__item">
+                                        <a href="/tech.html" class="menu__link menu--sub__link">Оборудование</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/" class="menu__link menu--sub__link">Только в ART Volga</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/expert.html" class="menu__link menu--sub__link">Экспертное мнение</a>
+                                    </li> -->
+                                </ul>
+                            </li>
+                            <li class="menu__item has-child">
+                                <span class="menu__link menu__link--main">Услуги</span>
+                                <svg class="menu-arrow">
+                                    <use xlink:href="#arrow-menu"></use>
+                                </svg>
+                                <ul class="menu__list menu--sub__list">
+                                    <li class="menu__item menu__item--back d-flex d-md-none">
+                                        <span class="menu__link">Услуги</span>
+                                        <svg class="menu-arrow">
+                                            <use xlink:href="#arrow-menu"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/eco-samara.html" class="menu__link menu--sub__link">ЭКО</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/iksi.html" class="menu__link menu--sub__link">ИКСИ</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/vmi.html" class="menu__link menu--sub__link">ВМИ</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/vmisd.html" class="menu__link menu--sub__link">ВМИСД</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/pgt.html" class="menu__link menu--sub__link">ПГТ</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/otlozhennoe-materinstvo.html"
+                                            class="menu__link menu--sub__link">Отложенное материнство</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/donorstvo-yajcekletok.html"
+                                            class="menu__link menu--sub__link">Донорство яйцеклеток</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/prices.html" class="menu__link menu__link--main">Цены</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/doctors.html" class="menu__link menu__link--main">Специалисты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="/stocks.html" class="menu__link menu__link--main">Акции</a>
+                            </li>
+                            <!-- <li class="menu__item has-child">
+                                <span class="menu__link menu__link--main">Донорам</span>
+                                <svg class="menu-arrow">
+                                    <use xlink:href="#arrow-menu"></use>
+                                </svg>
+                                <ul class="menu__list menu--sub__list">
+                                    <li class="menu__item menu__item--back d-flex d-md-none">
+                                        <span class="menu__link">Донорам</span>
+                                        <svg class="menu-arrow">
+                                            <use xlink:href="#arrow-menu"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/surrogacy.html" class="menu__link menu--sub__link">Суррогатное
+                                            материнство</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/donorom-yajtsekletok.html" class="menu__link menu--sub__link">Донорам
+                                            спермы</a>
+                                    </li>
+                                    <li class="menu__item menu--sub__item">
+                                        <a href="/donorom-spermy.html" class="menu__link menu--sub__link">Донорам
+                                            яйцеклеток</a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <li class="menu__item">
+                                <a href="/contacts.html" class="menu__link menu__link--main">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -258,7 +276,6 @@
                             </div>
                             <div class="price-table__name">
                                 Консультация уролога-андролога повторная
-
                             </div>
                             <div class="price-table__cost">
                                  1 600 ₽
@@ -267,37 +284,34 @@
                         <div class="price-table__item text">
                             <div class="price-table__number">
                                 11.009
-
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 300 МЕ
+                                Комплексный приём врача акушера-гинеколога первичный
                             </div>
                             <div class="price-table__cost">
-                                5 400 ₽
+                                2 900 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
                                 11.010
-
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 75 МЕ
+                                Комплексный приём врача акушера-гинеколога повторный
                             </div>
                             <div class="price-table__cost">
-                                1 200 ₽
+                                2 400 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
                                 11.011
-
                             </div>
                             <div class="price-table__name">
-                                Введение препарата Гонал-ф 450 МЕ
+                                Консультация врача акушера-гинеколога первичная
                             </div>
                             <div class="price-table__cost">
-                                8 700 ₽
+                                2 300 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -641,6 +655,30 @@
                     <footer class="price-table dropdown-content">
                         <div class="price-table__item text">
                             <div class="price-table__number">
+                                
+                            </div>
+                            <div class="price-table__name">
+                               Цикл лечения методом ЭКО (Стандартная программа). Включает услуги: 42.001, 42.003,
+                               42.005, 42.007, 42.009, 29.001
+                            </div>
+                            <div class="price-table__cost">
+                                 125 700 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                
+                            </div>
+                            <div class="price-table__name">
+                                Цикл лечения методом ЭКО в натуральном цикле (Стандартная программа). Включает услуги:
+                                42.001, 42.003, 42.005, 42.007, 42.009, 29.001
+                            </div>
+                            <div class="price-table__cost">
+                                 115 900 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
                                 41.001
                             </div>
                             <div class="price-table__name">
@@ -902,7 +940,7 @@
                                 Размораживание ооцитов
                             </div>
                             <div class="price-table__cost">
-                                 16 200 ₽
+                                 19 200 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -969,7 +1007,7 @@
 
                             </div>
                             <div class="price-table__cost">
-                                 8 100 ₽
+                                 9 800 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -980,7 +1018,7 @@
                                 Введение препарата Гонал-ф 75 МЕ
                             </div>
                             <div class="price-table__cost">
-                                 2 100 ₽
+                                 2 450 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -991,7 +1029,7 @@
                                 Введение препарата Гонал-ф 450 МЕ
                             </div>
                             <div class="price-table__cost">
-                                 12 150 ₽
+                                 14 700 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1002,7 +1040,7 @@
                                 Введение препарата Гонал-ф 900 МЕ
                             </div>
                             <div class="price-table__cost">
-                                 24 300 ₽
+                                 29 400 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1013,7 +1051,7 @@
                                 Введение препарата Диферелин 0,1
                             </div>
                             <div class="price-table__cost">
-                                 700 ₽
+                                 800 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1024,7 +1062,7 @@
                                 Введение препарата Цетротид
                             </div>
                             <div class="price-table__cost">
-                                1 900 ₽
+                                2 300 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1035,7 +1073,7 @@
                                 Введение препарата Овитрель
                             </div>
                             <div class="price-table__cost">
-                                 4 300 ₽
+                                 5 200 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1046,7 +1084,7 @@
                                 Введение препарата Луверис
                             </div>
                             <div class="price-table__cost">
-                                 2 500 ₽
+                                 2 800 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1057,7 +1095,7 @@
                                 Введение препарата Перговерис
                             </div>
                             <div class="price-table__cost">
-                                 3 600 ₽
+                                 3 900 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1068,7 +1106,7 @@
                                 Введение препарата Декапептил 0,1 мг
                             </div>
                             <div class="price-table__cost">
-                                 700 ₽
+                                 800 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1079,7 +1117,7 @@
                                 Введение препарата Декапептил 3,75 мг
                             </div>
                             <div class="price-table__cost">
-                                 8 900 ₽
+                                 10 800 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1090,7 +1128,7 @@
                                 Введение препарата Диферелин 3,75 мг
                             </div>
                             <div class="price-table__cost">
-                                 8 900 ₽
+                                 10 800 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1101,7 +1139,7 @@
                                 Введение препарата Менопур Мультидоза 600 МЕ
                             </div>
                             <div class="price-table__cost">
-                                 17 100 ₽
+                                 19 600 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1112,7 +1150,7 @@
                                 Введение препарата Менопур Мультидоза 1200 МЕ
                             </div>
                             <div class="price-table__cost">
-                                 34 200 ₽
+                                 39 200 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1123,7 +1161,7 @@
                                 Введение препарата Менопур 75 МЕ
                             </div>
                             <div class="price-table__cost">
-                                 1 950 ₽
+                                 2 450 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1134,7 +1172,7 @@
                                 Введение препарата Оргалутран
                             </div>
                             <div class="price-table__cost">
-                                 1 900 ₽
+                                 2 300 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1145,7 +1183,7 @@
                                 Введение препарата Пурегон 100 МЕ
                             </div>
                             <div class="price-table__cost">
-                                 2 600 ₽
+                                 3 100 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1156,7 +1194,7 @@
                                 Введение препарата Пурегон 300 МЕ
                             </div>
                             <div class="price-table__cost">
-                                 7 800 ₽
+                                 9 300 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1167,7 +1205,7 @@
                                 Введение препарата Пурегон 600 МЕ
                             </div>
                             <div class="price-table__cost">
-                                 15 600 ₽
+                                 18 600 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1178,7 +1216,7 @@
                                 Введение препарата Пурегон 900 МЕ
                             </div>
                             <div class="price-table__cost">
-                                 23 400 ₽
+                                 27 900 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1189,7 +1227,7 @@
                                 Введение препарата Элонва 150
                             </div>
                             <div class="price-table__cost">
-                                 27 200 ₽
+                                 32 700 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1211,7 +1249,7 @@
                                 Введение препарата Альтерпур 75 МЕ
                             </div>
                             <div class="price-table__cost">
-                                 1 850 ₽
+                                 2 350 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1222,7 +1260,7 @@
                                 Введение препарата Мериоферт 75 МЕ
                             </div>
                             <div class="price-table__cost">
-                                 1 850 ₽
+                                 2 350 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1238,13 +1276,46 @@
                         </div>
                         <div class="price-table__item text">
                             <div class="price-table__number">
+                                51.028
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Рековелль 33,3 мкг/мл 0,36мл
+                            </div>
+                            <div class="price-table__cost">
+                                6 750 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.029
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Рековелль 33,3 мкг/мл 1,08мл
+                            </div>
+                            <div class="price-table__cost">
+                                27 500 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                51.030
+                            </div>
+                            <div class="price-table__name">
+                                Введение препарата Рековелль 33,3 мкг/мл 2,16мл
+                            </div>
+                            <div class="price-table__cost">
+                                54 000 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
                                 52.001
                             </div>
                             <div class="price-table__name">
                                 Назначение препарата Прогинова
                             </div>
                             <div class="price-table__cost">
-                                 680 ₽
+                                 1 600 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1266,7 +1337,7 @@
                                 Назначение препарата Утрожестан 100 мг
                             </div>
                             <div class="price-table__cost">
-                                 520 ₽
+                                 590 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1277,7 +1348,7 @@
                                 Назначение препарата Утрожестан 200 мг
                             </div>
                             <div class="price-table__cost">
-                                 520 ₽
+                                 590 ₽
                             </div>
                         </div>
                         <div class="price-table__item text">
@@ -1308,10 +1379,20 @@
                             </div>
                             <div class="price-table__name">
                                 Назначение препарата Клостилбегит
-
                             </div>
                             <div class="price-table__cost">
-                                 670 ₽
+                                 740 ₽
+                            </div>
+                        </div>
+                        <div class="price-table__item text">
+                            <div class="price-table__number">
+                                52.008
+                            </div>
+                            <div class="price-table__name">
+                                Назначение препарата Андрогель 5г
+                            </div>
+                            <div class="price-table__cost">
+                                180 ₽
                             </div>
                         </div>
                     </footer>
@@ -1321,7 +1402,7 @@
     </div>
 </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
     <div class="container">
         <div class="row m-0 footer__inner text-white">
             <div class="col-auto f-column">
@@ -1356,8 +1437,8 @@
             </div>
         </div>
     </div>
-</footer>
-<!--         <footer class="footer">
+</footer> -->
+        <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
                     <div class="row">
@@ -1368,38 +1449,40 @@
                                 лицензия № ЛО-63-01-005828
                             </p>
                         </div>
-                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 footer__col footer__col--big footer__order">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-6 footer__col footer__col--big footer__order">
                             <nav class="footer__menu">
                                 <ul class="footer__list">
                                     <li class="footer__item footer__item--active">
                                         <div class="footer__header">
-                                            <a href="#" class="footer__link">Услуги</a>
+                                            <a href="/company.html" class="footer__link">О клинике</a>
                                             <svg class="menu-arrow">
                                                 <use xlink:href="#arrow-menu"></use>
                                             </svg>
                                         </div>
                                         <ul class="footer__list footer__list--sub">
                                             <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">Диагностика причин бесплодия</a>
+                                                <a href="/documents.html"
+                                                    class="footer__link footer__link--sub">Лицензии и документы</a>
                                             </li>
                                             <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">Женское бесплодие</a>
+                                                <a href="/reviews.html"
+                                                    class="footer__link footer__link--sub">Отзывы</a>
                                             </li>
                                             <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">Мужское бесплодие</a>
+                                                <a href="/news.html" class="footer__link footer__link--sub">Новости</a>
+                                            </li>
+                                            <!-- <li class="footer__item footer__item--sub">
+                                                <a href="/tech.html"
+                                                    class="footer__link footer__link--sub">Оборудование</a>
                                             </li>
                                             <li class="footer__item footer__item--sub">
-                                                Экстракорпоральное оплодотворение <a href="" class="footer__link footer__link--sub">(ЭКО)</a>
+                                                <a href="#" class="footer__link footer__link--sub">Только в ART
+                                                    Volga</a>
                                             </li>
                                             <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">Внутриматочная инсеминация (ВМИ)</a>
-                                            </li>
-                                            <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">Эмбриология</a>
-                                            </li>
-                                            <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">Ведение беременности</a>
-                                            </li>
+                                                <a href="/expert.html" class="footer__link footer__link--sub">Экспертное
+                                                    мнение</a>
+                                            </li> -->
                                         </ul>
                                     </li>
                                 </ul>
@@ -1408,48 +1491,58 @@
                         <div class="col-lg-2 col-md-4 col-sm-6 col-6 footer__col footer__order">
                             <nav class="footer__menu">
                                 <ul class="footer__list">
-                                    <li class="footer__item has-child">
+                                    <li class="footer__item footer__item--active has-child">
                                         <div class="footer__header">
-                                            <a href="#" class="footer__link">Пациентам</a>
+                                            <a href="/services.html" class="footer__link">Услуги</a>
                                             <svg class="menu-arrow">
                                                 <use xlink:href="#arrow-menu"></use>
                                             </svg>
                                         </div>
                                         <ul class="footer__list footer__list--sub">
                                             <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">
-                                                    Экспертное мнение
+                                                <a href="/eco-samara.html" class="footer__link footer__link--sub">
+                                                    ЭКО
                                                 </a>
                                             </li>
                                             <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">
-                                                    Вопросы и ответы
+                                                <a href="/iksi.html" class="footer__link footer__link--sub">
+                                                    ИКСИ
                                                 </a>
                                             </li>
                                             <li class="footer__item footer__item--sub">
-                                                <a href="" class="footer__link footer__link--sub">
-                                                    Документы
+                                                <a href="/vmi.html" class="footer__link footer__link--sub">
+                                                    ВМИ
+                                                </a>
+                                            </li>
+                                            <li class="footer__item footer__item--sub">
+                                                <a href="/vmisd.html" class="footer__link footer__link--sub">
+                                                    ВМИСД
+                                                </a>
+                                            </li>
+                                            <li class="footer__item footer__item--sub">
+                                                <a href="/pgt.html" class="footer__link footer__link--sub">
+                                                    ПГТ
+                                                </a>
+                                            </li>
+                                            <li class="footer__item footer__item--sub">
+                                                <a href="/otlozhennoe-materinstvo.html"
+                                                    class="footer__link footer__link--sub">
+                                                    Отложенное материнство
+                                                </a>
+                                            </li>
+                                            <li class="footer__item footer__item--sub">
+                                                <a href="/donorstvo-yajcekletok.html"
+                                                    class="footer__link footer__link--sub">
+                                                    Донорство яйцеклеток
                                                 </a>
                                             </li>
                                         </ul>
-                                    </li>
-                                    <li class="footer__item">
-                                        <a href="#" class="footer__link">Врачи</a>
-                                    </li>
-                                    <li class="footer__item">
-                                        <a href="#" class="footer__link">Акции</a>
-                                    </li>
-                                    <li class="footer__item">
-                                        <a href="#" class="footer__link">Цены</a>
-                                    </li>
-                                    <li class="footer__item">
-                                        <a href="#" class="footer__link">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-6 col-6 footer__col footer__order">
-                            <nav class="footer__menu">
+                            <!-- <nav class="footer__menu">
                                 <ul class="footer__list">
                                     <li class="footer__item has-child">
                                         <div class="footer__header">
@@ -1459,69 +1552,92 @@
                                             </svg>
                                         </div>
                                         <ul class="footer__list footer__list--sub">
-                                            <li class="footer__item footer__item--sub"><a href="#" class="footer__link footer__link--sub">
-                                                Донорство яйцеклетки
-                                            </a></li>
-                                            <li class="footer__item footer__item--sub"><a href="#" class="footer__link footer__link--sub">
-                                                Донорство спермы
-                                            </a></li>
-                                            <li class="footer__item footer__item--sub"><a href="#" class="footer__link footer__link--sub">
-                                                Стать донором
-                                            </a></li>
+                                            <li class="footer__item footer__item--sub"><a href="/surrogacy.html"
+                                                    class="footer__link footer__link--sub">
+                                                    Суррогатное материнство
+                                                </a></li>
+                                            <li class="footer__item footer__item--sub"><a
+                                                    href="/donorom-yajtsekletok.html"
+                                                    class="footer__link footer__link--sub">
+                                                    Донорство яйцеклетки
+                                                </a></li>
+                                            <li class="footer__item footer__item--sub"><a href="/donorom-spermy.html"
+                                                    class="footer__link footer__link--sub">
+                                                    Донорство спермы
+                                                </a></li>
                                         </ul>
                                     </li>
-                                    <li class="footer__item has-child">
-                                        <div class="footer__header">
-                                            <a href="#" class="footer__link">О клинике</a>
-                                            <svg class="menu-arrow">
-                                                <use xlink:href="#arrow-menu"></use>
-                                            </svg>
-                                        </div>
-                                        <ul class="footer__list footer__list--sub">
-                                            <li class="footer__item footer__item--sub">
-                                                <a href="#" class="footer__link footer__link--sub">
-                                                    Отзывы
-                                                </a>
-                                            </li>
-                                            <li class="footer__item footer__item--sub">
-                                                <a href="#" class="footer__link footer__link--sub">
-                                                    Новости
-                                                </a>
-                                            </li>
-                                            <li class="footer__item footer__item--sub">
-                                                <a href="#" class="footer__link footer__link--sub">
-                                                    Оборудование
-                                                </a>
-                                            </li>
-                                        </ul>
+                                    <li class="footer__item">
+                                        <a href="/doctors.html" class="footer__link">Специалисты</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="/stocks.html" class="footer__link">Акции</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="/prices.html" class="footer__link">Цены</a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <a href="/contacts.html" class="footer__link">Контакты</a>
                                     </li>
                                 </ul>
-                            </nav>
+                            </nav> -->
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-6 col-12 footer__col footer__col--big footer__order">
                             <div class="footer__contacts">
-                                <a href="" class="phone phone--footer footer__item--contacts">8 (846) 200-17-19</a>
-                                <address class="address address--footer footer__item--contacts">г. Самара, ул. Пушкина, д. 227</address>
-                                <a href="" class="mail footer__item--contacts">ooo_inep@mail.ru</a>
+                                <a href="tel:88462053322" class="phone phone--footer footer__item--contacts">8
+                                    (846) 205-33-22</a>
+                                <address class="address address--footer footer__item--contacts">г. Самара, ул. Пушкина,
+                                    д. 227</address>
+                                <a href="mailto:clinica@artvolga.site"
+                                    class="mail footer__item--contacts">clinica@artvolga.site</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer__bottom">
+            <div class="footer__inner footer__inner--bordered">
                 <div class="container">
-                    <div class="footer__inner">
-                        <span class="oferta footer__item footer__item--bottom">Вся представленная на сайте информация носит информационный характер и не является
+                    <div class="footer__bottom">
+                        <span class="oferta footer__item footer__item--bottom">Вся представленная на сайте информация
+                            носит информационный характер и не является
                             публичной офертой</span>
-                        <a class="policy policy--footer footer__item footer__item--bottom" href="">Политика конфиденциальности</a>
-                        <span class="author footer__item footer__item--bottom">Создание сайтов - <a href="https://seoprostor.ru/" target="_blank">SEO Простор</a></span>
+                        <a href="#policy" data-fancybox class="policy policy--footer footer__item footer__item--bottom">Политика
+                            конфиденциальности</a>
+                        <span class="author footer__item footer__item--bottom">Создание сайтов - <a
+                                href="https://seoprostor.ru/" target="_blank">SEO Простор</a></span>
                     </div>
                 </div>
             </div>
-        </footer> -->
+        </footer>
 
-        <script src="https://api-maps.yandex.ru/2.1/?apikey=e7d8e641-aaf4-43df-82c0-02b4c39cd17b&lang=ru_RU"
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=59b38a3e-ec6a-4350-8294-b66b2c952233&lang=ru_RU"
             type="text/javascript"></script>
+
+            <!-- Yandex.Metrika counter -->
+            <script type="text/javascript">
+                (function (m, e, t, r, i, k, a) {
+                    m[i] = m[i] || function () {
+                        (m[i].a = m[i].a || []).push(arguments)
+                    };
+                    m[i].l = 1 * new Date();
+                    k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode
+                        .insertBefore(k,
+                            a)
+                })
+                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+                ym(85080238, "init", {
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
+                });
+            </script>
+            <noscript>
+                <div><img src="https://mc.yandex.ru/watch/85080238" style="position:absolute; left:-9999px;" alt="" />
+                </div>
+            </noscript>
+            <!-- /Yandex.Metrika counter -->
         <script src="js/app.min.js"></script>
     </body>
 

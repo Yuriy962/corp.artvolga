@@ -14,8 +14,8 @@
         max-height: 768px;
     }
     &__img {
-        max-width: 497px;
-        max-height: 770px;
+        // max-width: 497px;
+        // max-height: 770px;
     }
     &__btn {
         margin-top: 10px;
@@ -23,7 +23,7 @@
     &__info{
         margin: 0 -15px;
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
     &--main {
         background: url('../assets/img/mainpage/banne-main.jpg');
@@ -35,7 +35,7 @@
         }
     }
     &--service{
-        min-height: 640px;
+        min-height: 650px;
         background: url('../assets/img/service/banner-bg.png'),
         $greyLight;
         background-size: cover;
@@ -103,10 +103,6 @@
 @media (max-width: 1200px) {
     .banner{
         max-height: initial;
-        &__img{
-            max-width: 363px;
-            max-height: 574px;
-        }
         &--main{
             padding-bottom: 60px;
             &__info{
@@ -122,6 +118,9 @@
         }
         .banner__info{
             padding-bottom: 80px;
+        }
+        &__img {
+            max-height: 574px;
         }
         &--main {
             &__info {
@@ -157,7 +156,7 @@
 @media (max-width: 576px){
     .banner{
         &__img {
-            max-width: 320px;
+            max-height: 430px;
         }
         .section-title{
             width: 90%;
@@ -197,7 +196,7 @@
 @media (max-width: 480px) {
     .banner {
         &__img {
-            max-width: 230px;
+            max-width: 320px;
             max-height: 321px;
         }
         &__slide {
@@ -216,7 +215,7 @@
                 padding-top: 0px;
             }
             .slider--banner{
-                top: 30px;
+                top: 55px;
             }
         }
     }

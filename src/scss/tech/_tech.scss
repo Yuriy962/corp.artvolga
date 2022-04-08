@@ -1,6 +1,9 @@
 .tech{
     &__inner{
         padding-bottom: 0;
+        &--main{
+            padding-bottom: 100px;
+        }
     }
     &__item{
         margin-bottom: 50px;
