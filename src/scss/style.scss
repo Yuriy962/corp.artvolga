@@ -110,10 +110,11 @@ $btnLightGrey: #DBDBE0;
 
 /* text */
 $textBlack: #37373E;
-
-*:not(ymaps) {
+*{
     box-sizing: border-box;
     font-family: 'Fira sans', sans-serif;
+}
+*:not(#map *) {
     transition: all .3s;
 }
 
@@ -767,7 +768,6 @@ a {
 
         &:hover {
             background-color: $purple;
-
             .arrow-path {
                 fill: #ffffff;
             }
@@ -786,7 +786,7 @@ a {
             }
 
             &__next {
-                right: 0;
+                right: 12%;
             }
         }
         &--tech{

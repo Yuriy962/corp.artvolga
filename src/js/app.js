@@ -347,7 +347,7 @@ $(window).on("load", function () {
     $(this).find('.question__answer').slideToggle();
   });
 });
-$(".slider--banner").on("afterChange", function () {
+/* $(".slider--banner").on("afterChange", function () {
   let title = $(".slick-slide.slick-active").find(".forbanner__title").html();
   let subtitle = $(".slick-slide.slick-active").find(".forbanner__subtitle").html();
   let href = '';
@@ -371,4 +371,4 @@ $(".slider--banner").on("afterChange", function () {
   $(".banner--main__info .section-title--main").html(title);
   $(".banner--main__info .section-subtitle").html(subtitle);
   $(".btn--banner").attr("href", href);
-});
+}); */
