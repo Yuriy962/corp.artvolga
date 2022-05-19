@@ -58,14 +58,14 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.querySelectorAll('.tabs-header__item').forEach(item => {
+  document.querySelectorAll('.tabs-triggers__item').forEach(item => {
     item.addEventListener('click', function (e) {
       e.preventDefault();
       const id = e.target.getAttribute("href").replace("#", "");
 
       // удаляем active у табов
-      document.querySelectorAll(".tabs-header__item").forEach((child) =>
-          child.classList.remove("tabs-header__item--active")
+      document.querySelectorAll(".tabs-triggers__item").forEach((child) =>
+          child.classList.remove("tabs-triggers__item--active")
         );
       // удаляем active у контента табов
       document.querySelectorAll(".tabs-content__item").forEach((child) =>
@@ -73,7 +73,7 @@ window.addEventListener("DOMContentLoaded", () => {
         );
 
       //добавляем класс активности нажатому табу и контенту нажатого таба
-      item.classList.add("tabs-header__item--active");
+      item.classList.add("tabs-triggers__item--active");
       document.getElementById(id).classList.add("tabs-content__item--active");
     })
   });

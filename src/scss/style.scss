@@ -1346,3 +1346,14 @@ input {
         }
     }
 }
+
+@media (max-width: 768px){
+    #map{
+        margin-top: 150px;
+    }
+}
+@media (max-width: 480px){
+    #map{
+        margin-top: 300px;
+    }
+}
